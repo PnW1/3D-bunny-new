@@ -94,113 +94,111 @@ const btnstyle = {
 
 const Utilities = () => {
   return (
-    <section id="Utilities" >
-      <Grid
-        container
-        item
+    <Grid
+      container
+      item
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      pt={2}
+      xs={12}
+      sx={{
+        backgroundColor: "#030526",
+
+        backgroundImage:
+          "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
+      }}
+    >
+      <Typography sx={headingfont}>Utilities</Typography>
+      <Typography sx={stylebodytext} pt={2} pb={2}>
+        We decided to do something outside the box from standard projects, so we
+        came up with something unique and different in our ecosystem for
+        holders. Aside from benefiting from our utilities and secondary market,
+        holding a Bunny NFT gives you an automatic lifetime entry into our
+        raffle pool. Bunny Raffle Pool: A Lifetime Benefit
+      </Typography>
+      <Box
+        width="80%"
         display="flex"
-        flexDirection="column"
-        alignItems="center"
         pt={2}
-        xs={12}
-        sx={{
-          backgroundColor: "#030526",
-
-          backgroundImage:
-            "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
-        }}
+        pb={2}
+        gap={2}
+        justifyContent="center"
+        sx={{ flexWrap: { xs: "wrap", lg: "nowrap" } }}
       >
-        <Typography sx={headingfont}>Utilities</Typography>
-        <Typography sx={stylebodytext} pt={2} pb={2}>
-          We decided to do something outside the box from standard projects, so
-          we came up with something unique and different in our ecosystem for
-          holders. Aside from benefiting from our utilities and secondary
-          market, holding a Bunny NFT gives you an automatic lifetime entry into
-          our raffle pool. Bunny Raffle Pool: A Lifetime Benefit
-        </Typography>
         <Box
-          width="80%"
+          height="306px"
+          p={2}
           display="flex"
-          pt={2}
-          pb={2}
-          gap={2}
-          justifyContent="center"
-          sx={{ flexWrap: { xs: "wrap", lg: "nowrap" } }}
-        >
-          <Box
-            height="306px"
-            p={2}
-            display="flex"
-            flexDirection="column"
-            justifyContent="space-around"
-            sx={{
-              width: { xs: "100%", sm: "590px", md: "643px" },
-              background: "#00B8FF",
-              border: "4px solid #04A7E6",
-              boxShadow: "0px 0px 20px #00B8FF",
-              borderRadius: "20px",
-            }}
-          >
-            <Typography sx={boxfont} color="white">
-              15% of every sale in the secondary marketplace goes into the pool
-              won by 50 holders every Sunday.{" "}
-            </Typography>
-            <Typography sx={boxfont} color="black">
-              [A constant supply of funds to the pool & an endless distribution
-              process for the holders]
-            </Typography>
-          </Box>
-
-          <Box
-            p={2}
-            height="306px"
-            display="flex"
-            flexDirection="column"
-            justifyContent="space-around"
-            sx={{
-              width: { xs: "100%", sm: "590px", md: "643px" },
-              background: "#BD00FF",
-              border: "4px solid #B80FBA",
-              boxShadow: "0px 0px 20px #BD00FF",
-              borderRadius: "20px",
-            }}
-          >
-            <Typography sx={boxfont} color="white">
-              15% of MINT INCOME goes into the Raffle Pool initially.
-            </Typography>
-            <Typography sx={boxfont} color="black">
-              [A constant supply of funds to the pool & an endless distribution
-              process for the holders]
-            </Typography>
-          </Box>
-        </Box>
-        <Typography sx={boxfont} color="white" width="70%" pt={5} pb={5}>
-          "By holding more Bunnies, you increase your chances of winning. If you
-          decide to sell your Bunny, you'll be helping to fund the pool."
-        </Typography>
-        <Box
-          height="700px"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
+          flexDirection="column"
+          justifyContent="space-around"
           sx={{
-            width: "80%",
-            background: "rgba(10, 28, 120, 0.1)",
-            border: "1px solid rgba(0, 184, 255, 0.5)",
-            boxShadow:
-              "0px 0px 20px rgba(0, 184, 255, 0.38), inset 0px 4px 20px rgba(0, 184, 255, 0.38)",
-            backdropFilter: "blur(10px)",
-            /* Note: backdrop-filter has minimal browser support */
-
-            borderRadius: "12px",
+            width: { xs: "100%", sm: "590px", md: "643px" },
+            background: "#00B8FF",
+            border: "4px solid #04A7E6",
+            boxShadow: "0px 0px 20px #00B8FF",
+            borderRadius: "20px",
           }}
         >
-          <Box width="90%" height="80%" display="flex" flexWrap="nowrap">
-            <BunnyTabs />
-          </Box>
+          <Typography sx={boxfont} color="white">
+            15% of every sale in the secondary marketplace goes into the pool
+            won by 50 holders every Sunday.{" "}
+          </Typography>
+          <Typography sx={boxfont} color="black">
+            [A constant supply of funds to the pool & an endless distribution
+            process for the holders]
+          </Typography>
         </Box>
-      </Grid>
-    </section>
+
+        <Box
+          p={2}
+          height="306px"
+          display="flex"
+          flexDirection="column"
+          justifyContent="space-around"
+          sx={{
+            width: { xs: "100%", sm: "590px", md: "643px" },
+            background: "#BD00FF",
+            border: "4px solid #B80FBA",
+            boxShadow: "0px 0px 20px #BD00FF",
+            borderRadius: "20px",
+          }}
+        >
+          <Typography sx={boxfont} color="white">
+            15% of MINT INCOME goes into the Raffle Pool initially.
+          </Typography>
+          <Typography sx={boxfont} color="black">
+            [A constant supply of funds to the pool & an endless distribution
+            process for the holders]
+          </Typography>
+        </Box>
+      </Box>
+      <Typography sx={boxfont} color="white" width="70%" pt={5} pb={5}>
+        "By holding more Bunnies, you increase your chances of winning. If you
+        decide to sell your Bunny, you'll be helping to fund the pool."
+      </Typography>
+      <Box
+        height="700px"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        sx={{
+          width: "80%",
+          background: "rgba(10, 28, 120, 0.1)",
+          border: "1px solid rgba(0, 184, 255, 0.5)",
+          boxShadow:
+            "0px 0px 20px rgba(0, 184, 255, 0.38), inset 0px 4px 20px rgba(0, 184, 255, 0.38)",
+          backdropFilter: "blur(10px)",
+          /* Note: backdrop-filter has minimal browser support */
+
+          borderRadius: "12px",
+        }}
+      >
+        <Box width="90%" height="80%" display="flex" flexWrap="nowrap">
+          <BunnyTabs />
+        </Box>
+      </Box>
+    </Grid>
   );
 };
 
