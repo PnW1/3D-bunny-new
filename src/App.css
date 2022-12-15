@@ -1,0 +1,209 @@
+.bodyfont {
+  font-family: "poppins";
+
+  font-style: normal;
+  font-weight: 100;
+  /* identical to box height */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.MuiTab-root.Mui-selected {
+  background: rgba(214, 0, 255, 0.1);
+  color: white !important;
+}
+.MuiTab-root {
+  color: white !important;
+}
+
+.headingStyle {
+  font-family: Nandia;
+  font-style: normal;
+  font-weight: 400;
+
+  text-transform: uppercase;
+  color: white;
+}
+
+.footericons {
+  width: 22px;
+  height: 22px;
+}
+
+.teamboxstyle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 402px;
+  height: 368px;
+  background-image: url("Assets/Vectorbg.svg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .teamboxstyle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 274px;
+    background-image: url("Assets/Vectorbgsm.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+  }
+}
+
+.teamboxstyle:hover {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 402px;
+  height: 446px;
+  background-image: url("Assets/Vectorbghover.svg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+  border-radius: 20px;
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .teamboxstyle:hover {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 274px;
+    background-image: url("Assets/Vectorbghoversm.png");
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    border-radius: 20px;
+  }
+}
+
+.joinbackground {
+  background-image: url("Assets/joinfirstcover.png"),
+    url("Assets/joinfirst.png");
+  background-size: 660px 560px, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, center;
+}
+
+.joinfirstbox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 52px 36px;
+  gap: 8px;
+  border-top-style: outset;
+  width: 80%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  background: rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+}
+
+.teamimage1 {
+  width: 143px;
+  height: 143px;
+  border-radius: 50%;
+  outline: 2px solid rgb(207, 173, 22);
+  outline-offset: 10px;
+}
+
+.teamboxstyle:hover .teamimage1 {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  outline: 2px solid rgb(207, 173, 22);
+  outline-offset: -10px;
+}
+
+.teamimage2 {
+  width: 143px;
+  height: 143px;
+  background-image: url("Assets/image1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.teamboxstyle:hover .teamimage2 {
+  width: 161px;
+  height: 161px;
+  background-image: url("Assets/img1hover.png");
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
+}
+
+.animated-background {
+  animation: bgfade 5s infinite;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(
+    260deg,
+    #18494c,
+    #0779d4,
+    #481d39,
+    #4b1a38,
+    #7d08d3,
+    #25194c
+  );
+  position: relative;
+}
+@keyframes bgfade {
+  0% {
+    background-image: url("Assets/Phase=First.png");
+    background-repeat: no-repeat;
+  }
+  25% {
+    background-image: url("Assets/Phase=Second.png");
+    background-repeat: no-repeat;
+  }
+  50% {
+    background-image: url("Assets/Phase=Third.png");
+    background-repeat: no-repeat;
+  }
+  75% {
+    background-image: url("Assets/Phase=Forth.png");
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-image: url("Assets/Phase=First.png");
+    background-repeat: no-repeat;
+  }
+} /****** add a background overlay *******/
+.animated-background:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    260deg,
+    #18494c,
+    #0779d4,
+    #481d39,
+    #4b1a38,
+    #7d08d3,
+    #25194c
+  );
+  opacity: 0.1;
+}
