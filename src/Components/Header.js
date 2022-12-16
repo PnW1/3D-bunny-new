@@ -132,11 +132,69 @@ function Header() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              <MenuItem sx={{ display: "flex", flexDirection: "column" }}>
+                <Button sx={{ color: "black", display: "block" }}>
+                  <Link
+                    to="/#TheArt"
+                    style={{ textDecoration: "none", color: "#000" }}
+                  >
+                    TheArt
+                  </Link>
+                </Button>
+                <Button sx={{ color: "white", display: "block" }}>
+                  <Link
+                    to="/#Roadmap"
+                    style={{ textDecoration: "none", color: "#000" }}
+                  >
+                    Roadmap
+                  </Link>
+                </Button>
+                <Button sx={{ color: "white", display: "block" }}>
+                  <Link
+                    to="/#Utilities"
+                    style={{ textDecoration: "none", color: "#000" }}
+                  >
+                    Utilities
+                  </Link>
+                </Button>
+
+                <Button sx={{ color: "white", display: "block" }}>
+                  <Link
+                    to="/#Team"
+                    style={{ textDecoration: "none", color: "#000" }}
+                  >
+                    Team
+                  </Link>
+                </Button>
+
+                <Button sx={{ color: "white", display: "block" }}>
+                  <Link
+                    to="/#Whitepaper"
+                    style={{ textDecoration: "none", color: "#000" }}
+                  >
+                    Whitepaper
+                  </Link>
+                </Button>
+
+                <Button sx={{ color: "white", display: "block" }}>
+                  <Link
+                    to="/#FAQ"
+                    style={{ textDecoration: "none", color: "#000" }}
+                  >
+                    FAQ
+                  </Link>
+                </Button>
+
+                <Button sx={{ color: "white", display: "block" }}>
+                  <Link
+                    to="/#Join"
+                    style={{ textDecoration: "none", color: "#000" }}
+                  >
+                    Join
+                  </Link>
+                </Button>
+              </MenuItem>
+
               <Button
                 variant="contained"
                 color="secondary"

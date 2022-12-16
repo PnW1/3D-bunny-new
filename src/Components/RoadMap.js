@@ -8,6 +8,7 @@ const PhaseStyle = {
   flex: "none",
   order: 0,
   flexGrow: 0,
+  width: { xs: "30%", sm: "15%" },
   fontSize: {
     xs: "20px",
     sm: "30px",
@@ -29,12 +30,12 @@ const boxstyle = {
   flexDirection: "column",
   background:
     "linear-gradient(180deg, rgba(214, 0, 255, 0.0572) 0%, rgba(0, 184, 255, 0.0572) 100%)",
-  width: { xs: "300px", sm: "45%%", md: "30%", lg: "22%", xl: "301px" },
+
   boxSizing: "border-box",
 };
 
 const boxstyle1 = {
-  height: "322px",
+  height: "350px",
   borderRadius: "12px",
   display: "flex",
 
@@ -42,7 +43,7 @@ const boxstyle1 = {
   flexDirection: "column",
   background:
     "linear-gradient(180deg, rgba(214, 0, 255, 0.0572) 0%, rgba(0, 184, 255, 0.0572) 100%)",
-  width: { xs: "300px", sm: "45%%", md: "30%", xl: "301px" },
+  width: { xs: "300px", sm: "45%", md: "30%", xl: "301px" },
   boxSizing: "border-box",
 };
 
@@ -135,7 +136,7 @@ const RoadMap = () => {
             <Typography width="50%">
               <hr />
             </Typography>
-            <Typography width="15%" textAlign="end" sx={PhaseStyle}>
+            <Typography textAlign="end" sx={PhaseStyle}>
               Phase I
             </Typography>
           </Box>
@@ -147,7 +148,19 @@ const RoadMap = () => {
             flexWrap="wrap"
             justifyContent="space-around"
           >
-            <Box sx={boxstyle} marginTop="0px">
+            <Box
+              sx={{
+                marginTop: { xs: "20px", sm: "0px" },
+                width: {
+                  xs: "300px",
+                  sm: "45%%",
+                  md: "30%",
+                  lg: "22%",
+                  xl: "301px",
+                },
+              }}
+              style={boxstyle}
+            >
               <Typography sx={styleheadingtext} className="headingStyle">
                 Art is Everything
               </Typography>
@@ -157,7 +170,19 @@ const RoadMap = () => {
                 in the space.
               </Typography>
             </Box>
-            <Box sx={boxstyle} marginTop="50px">
+            <Box
+              sx={{
+                marginTop: { xs: "20px", sm: "50px" },
+                width: {
+                  xs: "300px",
+                  sm: "45%%",
+                  md: "30%",
+                  lg: "22%",
+                  xl: "301px",
+                },
+              }}
+              style={boxstyle}
+            >
               <Typography sx={styleheadingtext} className="headingStyle">
                 Building Community
               </Typography>
@@ -169,7 +194,19 @@ const RoadMap = () => {
                 over, we will set up a voting platform that will ... View more
               </Typography>
             </Box>{" "}
-            <Box sx={boxstyle} marginTop="100px">
+            <Box
+              sx={{
+                marginTop: { xs: "20px", sm: "100px" },
+                width: {
+                  xs: "300px",
+                  sm: "45%%",
+                  md: "30%",
+                  lg: "22%",
+                  xl: "301px",
+                },
+              }}
+              style={boxstyle}
+            >
               <Typography sx={styleheadingtext} className="headingStyle">
                 3D Bunny Punks Minting
               </Typography>
@@ -180,7 +217,19 @@ const RoadMap = () => {
                 will be available for secondary transactions.
               </Typography>
             </Box>{" "}
-            <Box sx={boxstyle} marginTop="150px">
+            <Box
+              sx={{
+                marginTop: { xs: "20px", sm: "150px" },
+                width: {
+                  xs: "300px",
+                  sm: "45%%",
+                  md: "30%",
+                  lg: "22%",
+                  xl: "301px",
+                },
+              }}
+              style={boxstyle}
+            >
               <Typography sx={styleheadingtext} className="headingStyle">
                 Raffles, Giveaways, and Fun Initiatives
               </Typography>
@@ -210,7 +259,19 @@ const RoadMap = () => {
             flexWrap="wrap"
             justifyContent="space-around"
           >
-            <Box sx={boxstyle1} marginTop="150px">
+            <Box
+              sx={{
+                marginTop: { xs: "20px", sm: "150px" },
+                width: {
+                  xs: "300px",
+                  sm: "45%%",
+                  md: "30%",
+                  lg: "22%",
+                  xl: "301px",
+                },
+              }}
+              style={boxstyle1}
+            >
               <Typography sx={styleheadingtext} className="headingStyle">
                 Helping Rabbit Rescue Centres, Orphanages, Care-homes and
                 Planting Trees
@@ -220,7 +281,19 @@ const RoadMap = () => {
                 need.
               </Typography>
             </Box>
-            <Box sx={boxstyle1} marginTop="100px">
+            <Box
+              sx={{
+                marginTop: { xs: "20px", sm: "100px" },
+                width: {
+                  xs: "300px",
+                  sm: "45%%",
+                  md: "30%",
+                  lg: "22%",
+                  xl: "301px",
+                },
+              }}
+              style={boxstyle1}
+            >
               <Typography sx={styleheadingtext} className="headingStyle">
                 $BUNNY Token and STAKING
               </Typography>
@@ -231,7 +304,19 @@ const RoadMap = () => {
                 is Sold Out.
               </Typography>
             </Box>{" "}
-            <Box sx={boxstyle1} marginTop="50px">
+            <Box
+              sx={{
+                marginTop: { xs: "20px", sm: "50px" },
+                width: {
+                  xs: "300px",
+                  sm: "45%%",
+                  md: "30%",
+                  lg: "22%",
+                  xl: "301px",
+                },
+              }}
+              style={boxstyle1}
+            >
               <Typography sx={styleheadingtext} className="headingStyle">
                 Bunny Defender: The Comic
               </Typography>
@@ -258,7 +343,19 @@ const RoadMap = () => {
             flexWrap="wrap"
             justifyContent="space-around"
           >
-            <Box sx={boxstyle1} marginTop="0px">
+            <Box
+              sx={{
+                marginTop: { xs: "20px", sm: "0px" },
+                width: {
+                  xs: "300px",
+                  sm: "45%%",
+                  md: "30%",
+                  lg: "22%",
+                  xl: "301px",
+                },
+              }}
+              style={boxstyle1}
+            >
               <Typography sx={styleheadingtext} className="headingStyle">
                 Ready for the Metaverse
               </Typography>
@@ -267,7 +364,19 @@ const RoadMap = () => {
                 to build our digital member space so only holders can access it.
               </Typography>
             </Box>{" "}
-            <Box sx={boxstyle1} marginTop="50px">
+            <Box
+              sx={{
+                marginTop: { xs: "20px", sm: "50px" },
+                width: {
+                  xs: "300px",
+                  sm: "45%%",
+                  md: "30%",
+                  lg: "22%",
+                  xl: "301px",
+                },
+              }}
+              style={boxstyle1}
+            >
               <Typography sx={styleheadingtext} className="headingStyle">
                 Bunny Defender: The Game
               </Typography>
@@ -278,7 +387,19 @@ const RoadMap = () => {
                 City!
               </Typography>
             </Box>{" "}
-            <Box sx={boxstyle1} marginTop="100px">
+            <Box
+              sx={{
+                marginTop: { xs: "20px", sm: "10px" },
+                width: {
+                  xs: "300px",
+                  sm: "45%%",
+                  md: "30%",
+                  lg: "22%",
+                  xl: "301px",
+                },
+              }}
+              style={boxstyle1}
+            >
               <Typography sx={styleheadingtext} className="headingStyle">
                 3D Bunny Punks Experience
               </Typography>

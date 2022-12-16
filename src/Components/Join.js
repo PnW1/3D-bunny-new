@@ -19,7 +19,7 @@ const headingfont = {
   flexGrow: 0,
   fontSize: {
     xl: "52px",
-    xs: "25px",
+    xs: "20px",
     sm: "35px",
     md: "40px",
     lg: "40px",

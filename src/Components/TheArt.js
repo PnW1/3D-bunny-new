@@ -15,7 +15,7 @@ import art10 from "../Assets/10.png";
 import art11 from "../Assets/11.png";
 import art12 from "../Assets/1.png";
 import art13 from "../Assets/2.png";
-import nftartimage from "../Assets/NFT-ART-IMAGE 1.png";
+import nftartimage from "../Assets/NFT-ART-IMAGE 1.svg";
 
 const headingfont = {
   fontFamily: "Nandia",
@@ -105,18 +105,7 @@ const TheArt = () => {
             the most successful NFT projects in the space.
           </Typography>
         </Box>
-        <img
-          src={nftartimage}
-          alt=""
-          style={{
-            position: "absolute",
-            width: "60%",
-            height: "60%",
-            bottom: "-10%",
-            left: 0,
-            zIndex: "1",
-          }}
-        />
+        <img className="artimage" src={nftartimage} alt="" />
         <Box width="100%" pt={2} pb={2}>
           <marquee
             style={{ width: "100%" }}
