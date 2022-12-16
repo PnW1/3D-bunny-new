@@ -331,7 +331,7 @@ const RoadMap = () => {
             <Typography width="50%">
               <hr />
             </Typography>
-            <Typography width="15%" textAlign="end" sx={PhaseStyle}>
+            <Typography width="15%" sx={PhaseStyle}>
               Phase III
             </Typography>
           </Box>
@@ -389,7 +389,7 @@ const RoadMap = () => {
             </Box>{" "}
             <Box
               sx={{
-                marginTop: { xs: "20px", sm: "10px" },
+                marginTop: { xs: "20px", sm: "100px" },
                 width: {
                   xs: "300px",
                   sm: "45%%",

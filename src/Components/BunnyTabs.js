@@ -49,13 +49,7 @@ export default function BunnyTabs() {
     flex: "none",
     order: 0,
     flexGrow: 0,
-    fontSize: {
-      xl: "17px",
-      xs: "10px",
-      sm: "10px",
-      md: "13px",
-      lg: "15px",
-    },
+
     lineHeight: "140%",
     color: "white",
 
@@ -64,13 +58,14 @@ export default function BunnyTabs() {
     flexGrow: 0,
   };
   const boxfont = {
-    textAlign: "right",
+    textAlign: "left",
     borderRight: 1,
     borderColor: "divider",
     fontFamily: "Nandia",
     fontStyle: "normal",
     fontWeight: 400,
     flex: "none",
+    padding: "2px",
     order: 0,
     flexGrow: 0,
     fontSize: {
@@ -98,11 +93,13 @@ export default function BunnyTabs() {
       }}
     >
       <Box
-        width="30%"
         height="100%"
         display="flex"
         flexDirection="column"
-        sx={{ background: "rgba(0, 184, 255, 0.06)" }}
+        sx={{
+          width: { xs: "39%", sm: "30%" },
+          background: "rgba(0, 184, 255, 0.06)",
+        }}
       >
         <Tabs
           orientation="vertical"
@@ -112,22 +109,117 @@ export default function BunnyTabs() {
           aria-label="Vertical tabs example"
           sx={boxfont}
         >
-          <Tab label="$BUNNY tokens & staking system" {...a11yProps(0)} />
-          <Tab label="Land in the Metaverse" {...a11yProps(1)} />
-          <Tab label="Mint Pass " {...a11yProps(2)} />
           <Tab
-            label="Exceptional Rendering Quality & 3D Models"
+            sx={{
+              textAlign: "left",
+              alignSelf: "start",
+              alignContent: "start",
+              fontSize: {
+                xs: "12px",
+                sm: "15px",
+
+                lg: "18px",
+              },
+            }}
+            label="$BUNNY tokens & staking system"
+            {...a11yProps(0)}
+          />
+          <Tab
+            sx={{
+              textAlign: "left",
+              alignSelf: "start",
+              alignContent: "start",
+              fontSize: {
+                xs: "12px",
+                sm: "15px",
+
+                lg: "18px",
+              },
+            }}
+            label="Land in the Metaverse"
+            {...a11yProps(1)}
+          />
+          <Tab
+            sx={{
+              textAlign: "left",
+              alignSelf: "start",
+              alignContent: "start",
+              fontSize: {
+                xs: "12px",
+                sm: "15px",
+
+                lg: "18px",
+              },
+            }}
+            label="Mint Pass "
+            {...a11yProps(2)}
+          />
+          <Tab
+            sx={{
+              textAlign: "left",
+              alignSelf: "start",
+              alignContent: "start",
+              fontSize: {
+                xs: "12px",
+                sm: "15px",
+
+                lg: "18px",
+              },
+            }}
+            label="Exceptional Rendering Quality "
             {...a11yProps(3)}
           />
-          <Tab label="Giveaways" {...a11yProps(4)} />
-          <Tab label="Comic Book" {...a11yProps(5)} />
-          <Tab label="Moral initiatives" {...a11yProps(6)} />
+          <Tab
+            sx={{
+              textAlign: "left",
+              alignSelf: "start",
+              alignContent: "start",
+              fontSize: {
+                xs: "12px",
+                sm: "15px",
+
+                lg: "18px",
+              },
+            }}
+            label="Giveaways"
+            {...a11yProps(4)}
+          />
+          <Tab
+            sx={{
+              textAlign: "left",
+              alignSelf: "start",
+              alignContent: "start",
+              fontSize: {
+                xs: "12px",
+                sm: "15px",
+
+                lg: "18px",
+              },
+            }}
+            label="Comic Book"
+            {...a11yProps(5)}
+          />
+          <Tab
+            sx={{
+              textAlign: "left",
+              alignSelf: "start",
+              alignContent: "start",
+              fontSize: {
+                xs: "12px",
+                sm: "15px",
+
+                lg: "18px",
+              },
+            }}
+            label="Moral initiatives"
+            {...a11yProps(6)}
+          />
         </Tabs>
       </Box>
       <Box
-        width="70%"
         height="100%"
         sx={{
+          width: { xs: "61%", sm: "70%" },
           background: "rgba(0, 0, 0, 0.4)",
           borderRadius: " 0px 20px 20px 0px",
           overflow: "auto",
