@@ -4,7 +4,7 @@ import React from "react";
 import discord_logo from "../Assets/discord-logo.png";
 import twitter from "../Assets/twitter.png";
 import Vector from "../Assets/Vector.png";
-
+import discord from "../Assets/discord-white.svg";
 const stylebodytext = {
   fontFamily: "Poppins",
   fontStyle: "normal",
@@ -38,7 +38,7 @@ const Footer = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        sx={{ width: { xs: "100%", sm: "50%" } }}
+        sx={{ width: { xs: "100%", sm: "40%" } }}
       >
         <Typography sx={stylebodytext}>
           {" "}
@@ -50,7 +50,7 @@ const Footer = () => {
         display="flex"
         alignItems="center"
         justifyContent="space-around"
-        sx={{ width: { sx: "100%", sm: "50%", flexWrap: "wrap" } }}
+        sx={{ width: { sx: "100%", sm: "60%", flexWrap: "wrap" } }}
       >
         <Box
           gap={2}
@@ -58,16 +58,27 @@ const Footer = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            width: { xs: "100%", sm: "50%" },
+            width: { xs: "100%", sm: "45%" },
+            mt: { xs: "5px", sm: "0px" },
+            mb: { xs: "-5px", sm: "0px" },
           }}
         >
-          <Twitter sx={{ width: "50px", height: "50px", color: "white" }} />
-          <Instagram sx={{ width: "50px", height: "50px", color: "white" }} />
-          <Twitter sx={{ width: "50px", height: "50px", color: "white" }} />
+          <img style={{ width: "30px", height: "30px" }} src={discord}></img>
+          <Twitter sx={{ width: "30px", height: "30px", color: "white" }} />
+          <Instagram sx={{ width: "30px", height: "30px", color: "white" }} />
         </Box>
-
-        <Typography sx={stylebodytext}> Terms of Services</Typography>
-        <Typography sx={stylebodytext}> Privacy Policy</Typography>
+        <Box
+          gap={2}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: { xs: "100%", sm: "45%" },
+          }}
+        >
+          <Typography sx={stylebodytext}> Terms of Services</Typography>
+          <Typography sx={stylebodytext}> Privacy Policy</Typography>
+        </Box>
       </Box>
     </Grid>
   );

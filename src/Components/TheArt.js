@@ -74,76 +74,75 @@ const TheArt = () => {
   ];
 
   return (
-    <section id="TheArt">
-      <Grid
-        container
-        item
-        xs={12}
-        bgcolor="#030614"
-        style={{
-          position: "relative",
-          borderTop: "5px #030614",
-          borderTopStyle: "outset",
-        }}
+    <Grid
+      id="TheArt"
+      container
+      item
+      xs={12}
+      bgcolor="#030614"
+      style={{
+        position: "relative",
+        borderTop: "5px #030614",
+        borderTopStyle: "outset",
+      }}
+    >
+      <Box
+        width="100%"
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
       >
-        <Box
-          width="100%"
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
+        <Typography pt={2} sx={headingfont} className="headingStyle">
+          3D Bunny Art
+        </Typography>
+        <Typography pt={3} pb={3} sx={stylebodytext}>
+          The 3D Bunny Punks Team builds unique 3D avatars that function as the
+          foundations of a flourishing community. '3D Bunny Punks' mission is to
+          use high-quality NFTs in the real world and the Metaverse. Shortly
+          after purchase, you'll be greeted with your unique NFT, allowing you
+          to interact with your NFTs like never before. Measures to ensure the
+          5555 NFTs are up to standard and quality, challenging the most
+          successful NFT projects in the space.
+        </Typography>
+      </Box>
+      <img className="artimage" src={nftartimage} alt="" />
+      <Box width="100%" pt={2} pb={2}>
+        <marquee
+          style={{ width: "100%" }}
+          direction="left"
+          behavior="alternate"
         >
-          <Typography pt={2} sx={headingfont} className="headingStyle">
-            3D Bunny Art
-          </Typography>
-          <Typography pt={3} pb={3} sx={stylebodytext}>
-            The 3D Bunny Punks Team builds unique 3D avatars that function as
-            the foundations of a flourishing community. '3D Bunny Punks' mission
-            is to use high-quality NFTs in the real world and the Metaverse.
-            Shortly after purchase, you'll be greeted with your unique NFT,
-            allowing you to interact with your NFTs like never before. Measures
-            to ensure the 4000 NFTs are up to standard and quality, challenging
-            the most successful NFT projects in the space.
-          </Typography>
-        </Box>
-        <img className="artimage" src={nftartimage} alt="" />
-        <Box width="100%" pt={2} pb={2}>
-          <marquee
-            style={{ width: "100%" }}
-            direction="left"
-            behavior="alternate"
-          >
-            <Box width="100%" pb={2} display="flex" gap={2} flexWrap="nowrap">
-              {row1.map((elem) => (
-                <img style={{ borderRadius: "10%" }} src={elem} alt="NFT" />
-              ))}
-            </Box>
-          </marquee>
-          <marquee
-            style={{ width: "100%" }}
-            direction="right"
-            behavior="alternate"
-          >
-            <Box width="100%" pb={2} display="flex" gap={2} flexWrap="nowrap">
-              {row1.map((elem) => (
-                <img style={{ borderRadius: "10%" }} src={elem} alt="NFT" />
-              ))}
-            </Box>
-          </marquee>
+          <Box width="100%" pb={2} display="flex" gap={2} flexWrap="nowrap">
+            {row1.map((elem) => (
+              <img style={{ borderRadius: "10%" }} src={elem} alt="NFT" />
+            ))}
+          </Box>
+        </marquee>
+        <marquee
+          style={{ width: "100%" }}
+          direction="right"
+          behavior="alternate"
+        >
+          <Box width="100%" pb={2} display="flex" gap={2} flexWrap="nowrap">
+            {row1.map((elem) => (
+              <img style={{ borderRadius: "10%" }} src={elem} alt="NFT" />
+            ))}
+          </Box>
+        </marquee>
 
-          <marquee
-            style={{ width: "100%" }}
-            direction="left"
-            behavior="alternate"
-          >
-            <Box width="100%" pb={2} display="flex" gap={2} flexWrap="nowrap">
-              {row1.map((elem) => (
-                <img style={{ borderRadius: "10%" }} src={elem} alt="NFT" />
-              ))}
-            </Box>
-          </marquee>
-        </Box>
-      </Grid>
-    </section>
+        <marquee
+          style={{ width: "100%" }}
+          direction="left"
+          behavior="alternate"
+        >
+          <Box width="100%" pb={2} display="flex" gap={2} flexWrap="nowrap">
+            {row1.map((elem) => (
+              <img style={{ borderRadius: "10%" }} src={elem} alt="NFT" />
+            ))}
+          </Box>
+        </marquee>
+      </Box>
+    </Grid>
   );
 };
 

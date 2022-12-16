@@ -138,7 +138,7 @@ function Header() {
                     to="/#TheArt"
                     style={{ textDecoration: "none", color: "#000" }}
                   >
-                    TheArt
+                    The Art
                   </Link>
                 </Button>
                 <Button sx={{ color: "white", display: "block" }}>
@@ -249,7 +249,7 @@ function Header() {
                 to="/#TheArt"
                 style={{ textDecoration: "none", color: "#fff" }}
               >
-                TheArt
+                The Art
               </Link>
             </Button>
             <Button sx={{ my: 2, color: "white", display: "block" }}>

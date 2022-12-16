@@ -234,61 +234,100 @@ export default function BunnyTabs() {
           </Typography>
           <Typography mt={5} sx={stylebodytext}>
             75% - Staking & Community Rewards among 3D Bunny Punks NFT holders.
-            6% - Liquidity. Tokens for the liquidity pool. 8% - Team. 3D Bunny
-            Punks team payments. 5% - DAO. 3D Bunny Punks DAO funds. 1% -
-            Airdrops.Token release airdrops for 3D Bunny Punks holders and
-            project supporters. 5% - Treasury- Locked treasury that could be
-            unlocked by community voting to achieve chosen goals. We will burn
-            all $BUNNY used in utilities, and 5% of royalties will be used to
-            buy back and burn $BUNNY.
+            <span>
+              <br />
+            </span>
+            6% - Liquidity. Tokens for the liquidity pool.{" "}
+            <span>
+              <br />
+            </span>
+            8% - Team. 3D Bunny Punks team payments.{" "}
+            <span>
+              <br />
+            </span>{" "}
+            5% - DAO. 3D Bunny Punks DAO funds. 1% - Airdrops.Token release
+            airdrops for 3D Bunny Punks holders and project supporters.{" "}
+            <span>
+              <br />
+            </span>{" "}
+            5% - Treasury- Locked treasury that could be unlocked by community
+            voting to achieve chosen goals. We will burn all $BUNNY used in
+            utilities, and 5% of royalties will be used to buy back and burn
+            $BUNNY.
           </Typography>
         </TabPanel>
         <TabPanel value={value} index={1}>
           <Typography sx={stylebodytext}>
-            The token will be available after the presale. $BUNNY is a utility
-            token with a unique buyback-andburn mechanism and multiple utilities
-            related to the 3D Bunny Punks NFT collection. $BUNNY will be
-            distributed as follows:{" "}
+            3D BUNNY PUNKS anticipates acquiring land in the Metaverse, creating
+            a virtual member space for holders to hang out together as their
+            unique bunny avatars. Our metaverse space intends to function as the
+            3D Bunny Punks Headquarters that NFT holders can access. Also, NFT
+            holders can have digital access to important events such as upcoming
+            NFT conferences and enjoy our digital clubhouse, where 3D Bunny
+            Punks can hang out and partake in fun games. Blockchain gaming with
+            NFTs{" "}
+            <span style={{ fontWeight: "bold" }}>
+              {" "}
+              Bunny Defender: The Game
+            </span>{" "}
+            [2023] Powered By- Unreal Engine 5 3D Bunny Punks uses blockchain
+            technology to empower holders with actual digital ownership. Each
+            NFT is non-fungible, meaning unique, and no identical copy exists.
+            It is indivisible and is not interchangeable. The time of purchasing
+            video game character skins for single use is over now that 3D Bunny
+            Punks is here. In-game avatars can be tokenised through blockchain
+            technology, allowing users to buy, sell, and trade digital items.
           </Typography>
         </TabPanel>
         <TabPanel value={value} index={2}>
           <Typography mt={5} sx={stylebodytext}>
-            The token will be available after the presale. $BUNNY is a utility
-            token with a unique buyback-andburn mechanism and multiple utilities
-            related to the 3D Bunny Punks NFT collection. $BUNNY will be
-            distributed as follows:{" "}
+            The NFT acts as a mint pass for future drops meaning holders of the
+            3D Bunny Punks NFT have early access to future collections.
           </Typography>
         </TabPanel>
         <TabPanel value={value} index={3}>
           <Typography sx={stylebodytext}>
-            The token will be available after the presale. $BUNNY is a utility
-            token with a unique buyback-andburn mechanism and multiple utilities
-            related to the 3D Bunny Punks NFT collection. $BUNNY will be
-            distributed as follows:{" "}
+            High-quality rendering means that 3D Bunny Punks are equipped to be
+            used in movies, games, the Metaverse, and even FaceTime. Holders of
+            the NFT can expect access to their 3D Bunny Punks files, providing
+            them with complete control over their digital property. With this
+            file, you will construct animations of your Bunny.
           </Typography>
         </TabPanel>
         <TabPanel value={value} index={4}>
           <Typography mt={5} sx={stylebodytext}>
-            The token will be available after the presale. $BUNNY is a utility
-            token with a unique buyback-andburn mechanism and multiple utilities
-            related to the 3D Bunny Punks NFT collection. $BUNNY will be
-            distributed as follows:{" "}
+            3D Bunny Punks holders are eligible to participate in regular
+            giveaways, raffles, quizzes, trivia nights, and fun initiatives that
+            reward members of the 3D Bunny Punks. Rewards might range from
+            influencer party invitations to free NFTs, crypto, and more.
           </Typography>
         </TabPanel>
         <TabPanel value={value} index={5}>
           <Typography sx={stylebodytext}>
-            The token will be available after the presale. $BUNNY is a utility
-            token with a unique buyback-andburn mechanism and multiple utilities
-            related to the 3D Bunny Punks NFT collection. $BUNNY will be
-            distributed as follows:{" "}
+            3D Bunny Punks Comic Book by Gabriel Carvajal. [character designer
+            and comic artist] Each episode contains exciting stories.
           </Typography>
         </TabPanel>
         <TabPanel mt={5} value={value} index={6}>
           <Typography sx={stylebodytext}>
-            The token will be available after the presale. $BUNNY is a utility
-            token with a unique buyback-andburn mechanism and multiple utilities
-            related to the 3D Bunny Punks NFT collection. $BUNNY will be
-            distributed as follows:{" "}
+            3D bunny punks will be helping,
+            <span>
+              <br />
+            </span>
+            <span style={{ fontWeight: "bold" }}>• </span>Orphanage homes.
+            [India, Bangladesh, Nigeria]{" "}
+            <span>
+              <br />
+            </span>
+            <span style={{ fontWeight: "bold" }}>• </span> Planting of trees. To
+            improve the air quality by planting over 500 trees, rehabilitating
+            and rescuing domestic animals like rabbits e.t.c and educating
+            people about pet care.{" "}
+            <span>
+              <br />
+            </span>
+            3D BUNNY PUNKS is a community-focused project aiming to protect and
+            care for humans and animals.
           </Typography>
         </TabPanel>
       </Box>

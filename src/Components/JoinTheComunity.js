@@ -5,6 +5,7 @@ import SickIcon from "@mui/icons-material/Sick";
 
 import joincommunity from "../Assets/joincommunity.png";
 import vector5 from "../Assets/vector5.png";
+import discord from "../Assets/discord-white.svg";
 
 const JoinTheComunity = () => {
   const bodyfont = {
@@ -146,18 +147,40 @@ const JoinTheComunity = () => {
         <Box display="flex" width="90%" gap={2} justifyContent="center">
           <Button
             color="primary"
-            startIcon={<SickIcon />}
+            startIcon={
+              <img
+                style={{ width: "30px", height: "30px" }}
+                src={discord}
+              ></img>
+            }
             sx={btnstyle2}
             variant="contained"
           >
             Discord
           </Button>
-          <Button startIcon={<Twitter />} sx={btnstyle} variant="contained">
+          <Button
+            startIcon={
+              <Twitter
+                sx={{ width: "30px", height: "30px", color: "white" }}
+                fontSize="large"
+              />
+            }
+            sx={btnstyle}
+            variant="contained"
+          >
             Twitter
           </Button>
           <Button
             color="secondary"
-            startIcon={<Instagram />}
+            startIcon={
+              <Instagram
+                sx={{
+                  width: "30px",
+                  height: "30px",
+                  color: "white",
+                }}
+              />
+            }
             sx={btnstyle1}
             variant="contained"
           >
@@ -168,7 +191,6 @@ const JoinTheComunity = () => {
       <Box
         width="100%"
         position="absolute"
-        mb={-5}
         bottom="0"
         height="100px"
         zIndex={1}
@@ -176,6 +198,7 @@ const JoinTheComunity = () => {
           backgroundImage: `url(${vector5})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          mb: { xs: -5, xl: -2 },
         }}
       ></Box>
     </Grid>

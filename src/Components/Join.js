@@ -60,116 +60,114 @@ const Join = () => {
   };
 
   return (
-    <section id="Join">
-      <Grid container item xs={12} height="100%">
-        <Grid
-          item
-          xs={12}
-          md={6}
-          sx={{ height: { xs: "60vh", sm: "80vh", md: "100vh" } }}
-          className="joinbackground"
+    <Grid id="Join" container item xs={12} height="100%">
+      <Grid
+        item
+        xs={12}
+        md={6}
+        sx={{ height: { xs: "60vh", sm: "80vh", md: "100vh" } }}
+        className="joinbackground"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Box className="joinfirstbox">
+          <Typography sx={headingfont} height="20%">
+            Join the Community
+          </Typography>
+          <Typography sx={stylebodytext} height="80%" overflow="auto">
+            Now that you have been informed on what the 3D Bunny Punks is all
+            about, the only thing left to do for you is to become an active
+            member of the 3D Bunny Punks Community - on Discord, Twitter and
+            Instagram - and purchase your exclusive NFT. Good luck to you all!
+          </Typography>
+        </Box>
+      </Grid>
+      <Grid
+        item
+        xs={12}
+        md={6}
+        sx={{
+          backgroundColor: "#00072C",
+          height: { xs: "60vh", sm: "80vh", md: "100vh" },
+        }}
+      >
+        <Box
+          width="100%"
+          height="100%"
           display="flex"
           justifyContent="center"
           alignItems="center"
-        >
-          <Box className="joinfirstbox">
-            <Typography sx={headingfont} height="20%">
-              Join the Community
-            </Typography>
-            <Typography sx={stylebodytext} height="80%" overflow="auto">
-              Now that you have been informed on what the 3D Bunny Punks is all
-              about, the only thing left to do for you is to become an active
-              member of the 3D Bunny Punks Community - on Discord, Twitter and
-              Instagram - and purchase your exclusive NFT. Good luck to you all!
-            </Typography>
-          </Box>
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          md={6}
           sx={{
-            backgroundColor: "#00072C",
-            height: { xs: "60vh", sm: "80vh", md: "100vh" },
+            background:
+              "linear-gradient(to right top, #00B8FF 0%, #00B8FF 50%, transparent 50%)",
           }}
         >
-          <Box
-            width="100%"
-            height="100%"
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            sx={{
-              background:
-                "linear-gradient(to right top, #00B8FF 0%, #00B8FF 50%, transparent 50%)",
-            }}
-          >
-            <Box className="joinfirstbox">
-              <Box
-                width="100%"
-                gap={2}
-                display="flex"
-                justifyContent="space-between"
-              >
-                <TextField
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment sx={{ color: "white" }} position="start">
-                        <AccountCircle />
-                      </InputAdornment>
-                    ),
-                  }}
-                  placeholder="Please enter text"
-                  sx={textfieldstyle}
-                />
-                <TextField
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment sx={{ color: "white" }} position="start">
-                        <Email />
-                      </InputAdornment>
-                    ),
-                  }}
-                  placeholder="Please enter text"
-                  sx={textfieldstyle}
-                />
-              </Box>
+          <Box className="joinfirstbox">
+            <Box
+              width="100%"
+              gap={2}
+              display="flex"
+              justifyContent="space-between"
+            >
               <TextField
-                fullWidth
                 InputProps={{
                   startAdornment: (
                     <InputAdornment sx={{ color: "white" }} position="start">
-                      <Phone />
+                      <AccountCircle />
                     </InputAdornment>
                   ),
                 }}
                 placeholder="Please enter text"
                 sx={textfieldstyle}
               />
-
               <TextField
-                multiline
-                minRows={4}
-                fullWidth
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment sx={{ color: "white" }} position="start">
+                      <Email />
+                    </InputAdornment>
+                  ),
+                }}
                 placeholder="Please enter text"
                 sx={textfieldstyle}
               />
-              <Button
-                variant="contained"
-                color="primary"
-                sx={{
-                  alignSelf: "start",
-                  width: "40%",
-                  borderRadius: "50px",
-                }}
-              >
-                Submit
-              </Button>
             </Box>
+            <TextField
+              fullWidth
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment sx={{ color: "white" }} position="start">
+                    <Phone />
+                  </InputAdornment>
+                ),
+              }}
+              placeholder="Please enter text"
+              sx={textfieldstyle}
+            />
+
+            <TextField
+              multiline
+              minRows={4}
+              fullWidth
+              placeholder="Please enter text"
+              sx={textfieldstyle}
+            />
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{
+                alignSelf: "start",
+                width: "40%",
+                borderRadius: "50px",
+              }}
+            >
+              Submit
+            </Button>
           </Box>
-        </Grid>
+        </Box>
       </Grid>
-    </section>
+    </Grid>
   );
 };
 

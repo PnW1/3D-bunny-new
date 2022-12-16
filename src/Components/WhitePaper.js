@@ -73,48 +73,47 @@ const btnstyle = {
 
 const WhitePaper = () => {
   return (
-    <section id="Whitepaper" style={{ width: "100%" }}>
-      <Grid
-        container
-        item
-        display="flex"
-        justifyContent="flex-end"
+    <Grid
+      id="Whitepaper"
+      container
+      item
+      display="flex"
+      justifyContent="flex-end"
+      alignItems="center"
+      xs={12}
+      height="120vh"
+      sx={{
+        backgroundColor: "#030526",
+
+        backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgimg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <Box
+        sx={{ width: { xs: "100%", sm: "60%" } }}
         alignItems="center"
-        xs={12}
-        height="120vh"
-        sx={{
-          backgroundColor: "#030526",
-
-          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgimg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        height="200px"
+        display="flex"
+        flexDirection="column"
       >
-        <Box
-          sx={{ width: { xs: "100%", sm: "60%" } }}
-          alignItems="center"
-          height="200px"
-          display="flex"
-          flexDirection="column"
-        >
-          <Typography sx={headingfont}>WHITEPAPER</Typography>
-          <Typography sx={stylebodytext}>
-            We decided to do something outside the box from standard projects,
-            so we came up with something unique and different in our ecosystem
-            for holders.{" "}
-          </Typography>
+        <Typography sx={headingfont}>WHITEPAPER</Typography>
+        <Typography sx={stylebodytext}>
+          We decided to do something outside the box from standard projects, so
+          we came up with something unique and different in our ecosystem for
+          holders.{" "}
+        </Typography>
 
-          <Button
-            sx={btnstyle}
-            mt={5}
-            variant="contained"
-            startIcon={<Download />}
-          >
-            Download
-          </Button>
-        </Box>
-      </Grid>
-    </section>
+        <Button
+          sx={btnstyle}
+          mt={5}
+          variant="contained"
+          startIcon={<Download />}
+        >
+          Download
+        </Button>
+      </Box>
+    </Grid>
   );
 };
 
