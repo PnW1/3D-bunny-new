@@ -2,20 +2,20 @@ import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import bgimg from "../Assets/vector5.png";
 
-import art1 from "../Assets/1.svg";
-import art2 from "../Assets/2.svg";
-import art3 from "../Assets/3.svg";
-import art4 from "../Assets/4.svg";
-import art5 from "../Assets/5.svg";
-import art6 from "../Assets/6.svg";
-import art7 from "../Assets/7.svg";
-import art8 from "../Assets/8.svg";
-import art9 from "../Assets/9.svg";
-import art10 from "../Assets/10.svg";
-import art11 from "../Assets/11.svg";
-import art12 from "../Assets/12.svg";
-import art13 from "../Assets/13.svg";
-import nftartimage from "../Assets/NFT-ART-IMAGE 1.svg";
+import art1 from "../Assets/1.png";
+import art2 from "../Assets/2.png";
+import art3 from "../Assets/3.png";
+import art4 from "../Assets/4.png";
+import art5 from "../Assets/5.png";
+import art6 from "../Assets/6.png";
+import art7 from "../Assets/7.png";
+import art8 from "../Assets/8.png";
+import art9 from "../Assets/9.png";
+import art10 from "../Assets/10.png";
+import art11 from "../Assets/11.png";
+import art12 from "../Assets/1.png";
+import art13 from "../Assets/2.png";
+import nftartimage from "../Assets/NFT-ART-IMAGE 1.png";
 
 const headingfont = {
   fontFamily: "Nandia",

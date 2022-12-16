@@ -1,6 +1,6 @@
 import { Avatar, Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import profileimage from "../Assets/1.svg";
+import profileimage from "../Assets/1.png";
 
 const headingfont = {
   fontFamily: "Nandia",
