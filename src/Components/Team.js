@@ -20,6 +20,46 @@ const headingfont = {
   color: "#ffffff",
   textTransform: "uppercase",
 };
+
+const teamheadingfont = {
+  fontFamily: "Nandia",
+  fontStyle: "normal",
+  fontWeight: 400,
+  flex: "none",
+  order: 0,
+  flexGrow: 0,
+  fontSize: {
+    xs: "21px",
+    md: "24px",
+  },
+  lineHeight: "36px",
+  color: "#ffffff",
+  textAlign: "center",
+  textTransform: "uppercase",
+
+  alignSelf: "stretch",
+
+  /* Inside auto layout */
+};
+const teambodyfont = {
+  fontFamily: "Nandia",
+  fontStyle: "normal",
+  fontWeight: 400,
+  flex: "none",
+  order: 0,
+  flexGrow: 0,
+  fontSize: {
+    xs: "15px",
+    md: "18",
+  },
+  lineHeight: "38px",
+  color: "#ffffff",
+  textAlign: "center",
+  textTransform: "uppercase",
+
+  /* Inside auto layout */
+};
+
 const stylebodytext = {
   width: { xs: "80%", sm: "70%", md: "60%" },
   textAlign: "center",
@@ -92,55 +132,55 @@ const Team = () => {
       >
         <Box className="teamboxstyle">
           <img src={profileimage} className="teamimage1" alt="" />
-          <Typography pt={2} className="headingStyle" fontSize="20px">
+          <Typography pt={5} sx={teamheadingfont}>
             Sara
           </Typography>
-          <Typography pt={1} className="headingStyle" fontSize="12px">
+          <Typography pt={1} sx={teambodyfont}>
             Founder
           </Typography>
         </Box>
         <Box className="teamboxstyle">
           <img src={profileimage} className="teamimage1" alt="" />
-          <Typography pt={2} className="headingStyle" fontSize="20px">
+          <Typography pt={5} sx={teamheadingfont}>
             Wahab
           </Typography>
-          <Typography pt={1} className="headingStyle" fontSize="12px">
+          <Typography pt={1} sx={teambodyfont}>
             Senior Developer/Programmer
           </Typography>
         </Box>
         <Box className="teamboxstyle">
           <img src={profileimage} className="teamimage1" alt="" />
-          <Typography pt={2} className="headingStyle" fontSize="20px">
+          <Typography pt={5} sx={teamheadingfont}>
             Sparrow
           </Typography>
-          <Typography pt={1} className="headingStyle" fontSize="12px">
+          <Typography pt={1} sx={teambodyfont}>
             Project Manager/Marketing
           </Typography>
         </Box>
         <Box className="teamboxstyle">
           <img src={profileimage} className="teamimage1" alt="" />
-          <Typography pt={2} className="headingStyle" fontSize="20px">
+          <Typography pt={5} sx={teamheadingfont}>
             Ray
           </Typography>
-          <Typography pt={1} className="headingStyle" fontSize="12px">
+          <Typography pt={1} sx={teambodyfont}>
             Comunity Manager/Marketing
           </Typography>
         </Box>
         <Box className="teamboxstyle">
           <img src={profileimage} className="teamimage1" alt="" />
-          <Typography pt={2} className="headingStyle" fontSize="20px">
+          <Typography pt={5} sx={teamheadingfont}>
             ChicMic
           </Typography>
-          <Typography pt={1} className="headingStyle" fontSize="12px">
+          <Typography pt={1} sx={teambodyfont}>
             3D Art Studio
           </Typography>
         </Box>
         <Box className="teamboxstyle">
           <img src={profileimage} className="teamimage1" alt="" />
-          <Typography pt={2} className="headingStyle" fontSize="20px">
+          <Typography pt={5} sx={teamheadingfont}>
             Gabriel
           </Typography>
-          <Typography pt={1} className="headingStyle" fontSize="12px">
+          <Typography pt={1} sx={teambodyfont}>
             Comic Artist/Illustrator
           </Typography>
         </Box>

@@ -27,6 +27,22 @@ const pages = [
   "FAQ",
   "Join",
 ];
+
+const itemstyle = {
+  fontFamily: "Poppins",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "14px",
+  lineHeight: "140%",
+  color: "#E8F2FF",
+  flex: "none",
+  order: 0,
+  flexGrow: 0,
+  zIndex: 0,
+  my: 2,
+  display: "block",
+};
+
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Header() {
@@ -54,50 +70,23 @@ function Header() {
       elevation={0}
       position="fixed"
       style={{ padding: "0px", margin: "0px" }}
-      sx={trigger ? { background: "#BD00FF" } : { background: "transparent" }}
+      sx={
+        trigger
+          ? { background: "#25194c" }
+          : { background: "transparent", elevation: 1 }
+      }
     >
       <Container maxWidth="xl" sx={{ display: "flex", width: "100%" }}>
-        <Box width="30%" display="flex" alignItems="center">
+        <Box
+          width="20%"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
           <Avatar src={logo} alt="logo" />
         </Box>
 
-        {/* <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box> */}
-        <Box width="70%">
+        <Box width="80%">
           <Box
             width="100%"
             display="flex"
@@ -244,62 +233,90 @@ function Header() {
               display: { xs: "none", md: "flex" },
             }}
           >
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
+            <Button sx={itemstyle}>
               <Link
                 to="/#TheArt"
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{
+                  textDecoration: "none",
+                  color: "#E8F2FF",
+                  textTransform: "none",
+                }}
               >
                 The Art
               </Link>
             </Button>
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
+            <Button sx={itemstyle}>
               <Link
                 to="/#Roadmap"
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{
+                  textDecoration: "none",
+                  color: "#E8F2FF",
+                  textTransform: "none",
+                }}
               >
                 Roadmap
               </Link>
             </Button>
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
+            <Button sx={itemstyle}>
               <Link
                 to="/#Utilities"
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{
+                  textDecoration: "none",
+                  color: "#E8F2FF",
+                  textTransform: "none",
+                }}
               >
                 Utilities
               </Link>
             </Button>
 
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
+            <Button sx={itemstyle}>
               <Link
                 to="/#Team"
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{
+                  textDecoration: "none",
+                  color: "#E8F2FF",
+                  textTransform: "none",
+                }}
               >
                 Team
               </Link>
             </Button>
 
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
+            <Button sx={itemstyle}>
               <Link
                 to="/#Whitepaper"
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{
+                  textDecoration: "none",
+                  color: "#E8F2FF",
+                  textTransform: "none",
+                }}
               >
                 Whitepaper
               </Link>
             </Button>
 
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
+            <Button sx={itemstyle}>
               <Link
                 to="/#FAQ"
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{
+                  textDecoration: "none",
+                  color: "#E8F2FF",
+                  textTransform: "none",
+                }}
               >
                 FAQ
               </Link>
             </Button>
 
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
+            <Button sx={itemstyle}>
               <Link
                 to="/#Join"
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{
+                  textDecoration: "none",
+                  color: "#E8F2FF",
+                  textTransform: "none",
+                }}
               >
                 Join
               </Link>
@@ -308,11 +325,18 @@ function Header() {
             <Button
               variant="contained"
               color="secondary"
-              startIcon={<Wallet />}
+              startIcon={
+                <Wallet
+                  sx={{
+                    width: { xs: "15px", lg: "24px" },
+                    height: { xs: "15px", lg: "24px" },
+                  }}
+                />
+              }
               sx={{
                 fontFamily: "Poppins",
 
-                fontSize: "10px",
+                fontSize: { xs: "7px", lg: "10px" },
                 borderRadius: "5px",
                 "&.MuiButton-contained": {
                   height: "40px",
@@ -326,11 +350,18 @@ function Header() {
             <Button
               variant="contained"
               color="primary"
-              startIcon={<Wallet />}
+              startIcon={
+                <Wallet
+                  sx={{
+                    width: { xs: "15px", lg: "24px" },
+                    height: { xs: "15px", lg: "24px" },
+                  }}
+                />
+              }
               sx={{
                 fontFamily: "Poppins",
 
-                fontSize: "10px",
+                fontSize: { xs: "7px", lg: "10px" },
                 borderRadius: "5px",
                 "&.MuiButton-contained": {
                   height: "40px",

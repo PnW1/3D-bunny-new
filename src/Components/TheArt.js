@@ -13,8 +13,16 @@ import art8 from "../Assets/8.png";
 import art9 from "../Assets/9.png";
 import art10 from "../Assets/10.png";
 import art11 from "../Assets/11.png";
-import art12 from "../Assets/1.png";
-import art13 from "../Assets/2.png";
+import art12 from "../Assets/12.png";
+import art13 from "../Assets/13.png";
+import art14 from "../Assets/14.png";
+import art15 from "../Assets/15.png";
+import art16 from "../Assets/16.png";
+import art17 from "../Assets/17.png";
+import art18 from "../Assets/18.png";
+import art19 from "../Assets/19.png";
+import art20 from "../Assets/20.png";
+
 import nftartimage from "../Assets/NFT-ART-IMAGE 1.svg";
 
 const headingfont = {
@@ -57,20 +65,18 @@ const stylebodytext = {
 };
 
 const TheArt = () => {
-  const row1 = [
-    art1,
-    art2,
-    art3,
-    art4,
-    art5,
-    art6,
-    art7,
-    art8,
-    art9,
-    art10,
+  const row1 = [art1, art2, art3, art4, art5, art6, art7, art8, art9, art10];
+  const row2 = [
     art11,
     art12,
     art13,
+    art14,
+    art15,
+    art16,
+    art17,
+    art18,
+    art19,
+    art20,
   ];
 
   return (
@@ -124,7 +130,7 @@ const TheArt = () => {
           behavior="alternate"
         >
           <Box width="100%" pb={2} display="flex" gap={2} flexWrap="nowrap">
-            {row1.map((elem) => (
+            {row2.map((elem) => (
               <img style={{ borderRadius: "10%" }} src={elem} alt="NFT" />
             ))}
           </Box>
@@ -136,7 +142,7 @@ const TheArt = () => {
           behavior="alternate"
         >
           <Box width="100%" pb={2} display="flex" gap={2} flexWrap="nowrap">
-            {row1.map((elem) => (
+            {row1.reverse().map((elem) => (
               <img style={{ borderRadius: "10%" }} src={elem} alt="NFT" />
             ))}
           </Box>

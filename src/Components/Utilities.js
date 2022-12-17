@@ -38,9 +38,9 @@ const boxfont = {
   flexGrow: 0,
   fontSize: {
     xl: "18px",
-    xs: "18px",
-    sm: "18px",
-    md: "20px",
+    xs: "14px",
+    sm: "15px",
+    md: "16px",
     lg: "24px",
   },
   lineHeight: "40px",

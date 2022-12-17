@@ -278,7 +278,7 @@ export default function Faq() {
             }}
           >
             <Typography>
-              For presale between 1 - 5 mints.span{" "}
+              For presale between 1 - 5 mints.
               <span>
                 <br />
               </span>
@@ -390,9 +390,12 @@ export default function Faq() {
             }}
           >
             <Typography>
-              Yes. 3D BUNNY PUNKS NFTs will have several traits. In addition, we
-              will use a system such as rarity.tools to help you track the
-              rarity of your 3D BUNNY PUNKS.
+              Yes, 3D BUNNY PUNKS NFTs will have several traits.{" "}
+              <span>
+                <br />
+              </span>{" "}
+              In addition, we will use a system such as rarity tools to help you
+              to track the rarity of your 3D BUNNY PUNKS
             </Typography>
           </AccordionDetails>
         </Accordion>

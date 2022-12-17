@@ -8,11 +8,11 @@ const PhaseStyle = {
   flex: "none",
   order: 0,
   flexGrow: 0,
-  width: { xs: "30%", sm: "15%" },
+  width: { xs: "30%", sm: "25%", lg: "15%" },
   fontSize: {
     xs: "20px",
     sm: "30px",
-    md: "40pxpx",
+    md: "35px",
     lg: "40px",
     xl: "50px",
   },
@@ -22,7 +22,6 @@ const PhaseStyle = {
 };
 
 const boxstyle = {
-  height: { xs: "200px", sm: "422px" },
   borderRadius: "12px",
   display: "flex",
 
@@ -158,6 +157,7 @@ const RoadMap = () => {
                 lg: "22%",
                 xl: "301px",
               },
+              height: { xs: "350px", sm: "422px" },
             }}
             style={boxstyle}
           >
@@ -180,6 +180,7 @@ const RoadMap = () => {
                 lg: "22%",
                 xl: "301px",
               },
+              height: { xs: "350px", sm: "422px" },
             }}
             style={boxstyle}
           >
@@ -204,6 +205,7 @@ const RoadMap = () => {
                 lg: "22%",
                 xl: "301px",
               },
+              height: { xs: "350px", sm: "422px" },
             }}
             style={boxstyle}
           >
@@ -227,6 +229,7 @@ const RoadMap = () => {
                 lg: "22%",
                 xl: "301px",
               },
+              height: { xs: "350px", sm: "422px" },
             }}
             style={boxstyle}
           >
@@ -243,7 +246,12 @@ const RoadMap = () => {
         </Box>
       </Box>
       <Box width="90%" display="flex" flexDirection="column">
-        <Box display="flex" justifyContent="flex-start" alignItems="center">
+        <Box
+          display="flex"
+          justifyContent="flex-start"
+          alignItems="center"
+          mt={4}
+        >
           <Typography width="15%" sx={PhaseStyle}>
             Phase II
           </Typography>
@@ -326,15 +334,19 @@ const RoadMap = () => {
         </Box>
       </Box>
       <Box width="90%" display="flex" flexDirection="column">
-        <Box display="flex" justifyContent="flex-end" alignItems="center">
+        <Box
+          display="flex"
+          justifyContent="flex-end"
+          alignItems="center"
+          mt={4}
+        >
           <Typography width="50%">
             <hr />
           </Typography>
-          <Typography width="15%" sx={PhaseStyle}>
+          <Typography textAlign="end" sx={PhaseStyle}>
             Phase III
           </Typography>
         </Box>
-
         <Box
           display="flex"
           width="100%"

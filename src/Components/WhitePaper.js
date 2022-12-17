@@ -68,6 +68,7 @@ const btnstyle = {
     color: "white",
     borderColor: "white",
     background: "#BD00FF",
+    padding: "10px",
   },
 };
 
@@ -93,7 +94,9 @@ const WhitePaper = () => {
       <Box
         sx={{ width: { xs: "100%", sm: "60%" } }}
         alignItems="center"
+        justifyContent="space-between"
         height="200px"
+        gap={2}
         display="flex"
         flexDirection="column"
       >
@@ -103,15 +106,12 @@ const WhitePaper = () => {
           we came up with something unique and different in our ecosystem for
           holders.{" "}
         </Typography>
-
-        <Button
-          sx={btnstyle}
-          mt={5}
-          variant="contained"
-          startIcon={<Download />}
-        >
-          Download
-        </Button>
+        <Box width="50%" display="flex" justifyContent="flex-end">
+          {" "}
+          <Button sx={btnstyle} variant="contained" startIcon={<Download />}>
+            Download
+          </Button>
+        </Box>
       </Box>
     </Grid>
   );

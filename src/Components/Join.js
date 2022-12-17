@@ -55,7 +55,12 @@ const Join = () => {
       fontVariant: "outlined",
       size: "small",
       borderRadius: "20px",
-      borderColor: "Background",
+      borderColor: "white",
+    },
+    "& .MuiOutlinedInput-root:hover": {
+      "& > fieldset": {
+        borderColor: "white",
+      },
     },
   };
 
