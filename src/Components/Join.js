@@ -70,7 +70,7 @@ const Join = () => {
         item
         xs={12}
         md={6}
-        sx={{ height: { xs: "60vh", sm: "80vh", md: "100vh" } }}
+        sx={{ height: "100vh" }}
         className="joinbackground"
         display="flex"
         justifyContent="center"
@@ -94,7 +94,7 @@ const Join = () => {
         md={6}
         sx={{
           backgroundColor: "#00072C",
-          height: { xs: "60vh", sm: "80vh", md: "100vh" },
+          height: "100vh",
         }}
       >
         <Box

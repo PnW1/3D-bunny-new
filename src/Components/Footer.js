@@ -16,7 +16,7 @@ const stylebodytext = {
   flexGrow: 0,
   fontSize: {
     xl: "17px",
-    xs: "15px",
+    xs: "10px",
 
     md: "15px",
     lg: "15px",
@@ -51,7 +51,7 @@ const Footer = () => {
         display="flex"
         alignItems="center"
         justifyContent="space-around"
-        sx={{ width: { sx: "100%", sm: "60%", flexWrap: "wrap" } }}
+        sx={{ width: { xs: "100%", sm: "60%", flexWrap: "wrap" } }}
       >
         <Box
           gap={2}

@@ -65,7 +65,23 @@ const stylebodytext = {
 };
 
 const TheArt = () => {
-  const row1 = [art1, art2, art3, art4, art5, art6, art7, art8, art9, art10];
+  const row1 = [
+    art1,
+    art2,
+    art3,
+    art4,
+    art5,
+    art6,
+    art7,
+    art8,
+    art9,
+    art10,
+    art13,
+    art14,
+    art15,
+    art16,
+    art17,
+  ];
   const row2 = [
     art11,
     art12,
@@ -77,6 +93,11 @@ const TheArt = () => {
     art18,
     art19,
     art20,
+    art1,
+    art2,
+    art3,
+    art4,
+    art5,
   ];
 
   return (
