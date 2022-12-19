@@ -16,7 +16,8 @@ import logo from "../Assets/logo.png";
 
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { DiscFull, Wallet } from "@mui/icons-material";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
+import Link from "@mui/material/Link";
 
 const pages = [
   "TheArt",
@@ -123,64 +124,64 @@ function Header() {
             >
               <MenuItem sx={{ display: "flex", flexDirection: "column" }}>
                 <Button sx={{ color: "black", display: "block" }}>
-                  <Link
+                  <HashLink
                     to="/#TheArt"
                     style={{ textDecoration: "none", color: "#000" }}
                   >
                     The Art
-                  </Link>
+                  </HashLink>
                 </Button>
                 <Button sx={{ color: "white", display: "block" }}>
-                  <Link
+                  <HashLink
                     to="/#Roadmap"
                     style={{ textDecoration: "none", color: "#000" }}
                   >
                     Roadmap
-                  </Link>
+                  </HashLink>
                 </Button>
                 <Button sx={{ color: "white", display: "block" }}>
-                  <Link
+                  <HashLink
                     to="/#Utilities"
                     style={{ textDecoration: "none", color: "#000" }}
                   >
                     Utilities
-                  </Link>
+                  </HashLink>
                 </Button>
 
                 <Button sx={{ color: "white", display: "block" }}>
-                  <Link
+                  <HashLink
                     to="/#Team"
                     style={{ textDecoration: "none", color: "#000" }}
                   >
                     Team
-                  </Link>
+                  </HashLink>
                 </Button>
 
                 <Button sx={{ color: "white", display: "block" }}>
-                  <Link
+                  <HashLink
                     to="/#Whitepaper"
                     style={{ textDecoration: "none", color: "#000" }}
                   >
                     Whitepaper
-                  </Link>
+                  </HashLink>
                 </Button>
 
                 <Button sx={{ color: "white", display: "block" }}>
-                  <Link
+                  <HashLink
                     to="/#FAQ"
                     style={{ textDecoration: "none", color: "#000" }}
                   >
                     FAQ
-                  </Link>
+                  </HashLink>
                 </Button>
 
                 <Button sx={{ color: "white", display: "block" }}>
-                  <Link
+                  <HashLink
                     to="/#Join"
                     style={{ textDecoration: "none", color: "#000" }}
                   >
                     Join
-                  </Link>
+                  </HashLink>
                 </Button>
               </MenuItem>
 
@@ -234,7 +235,7 @@ function Header() {
             }}
           >
             <Button sx={itemstyle}>
-              <Link
+              <HashLink
                 to="/#TheArt"
                 style={{
                   textDecoration: "none",
@@ -243,10 +244,10 @@ function Header() {
                 }}
               >
                 The Art
-              </Link>
+              </HashLink>
             </Button>
             <Button sx={itemstyle}>
-              <Link
+              <HashLink
                 to="/#Roadmap"
                 style={{
                   textDecoration: "none",
@@ -255,10 +256,10 @@ function Header() {
                 }}
               >
                 Roadmap
-              </Link>
+              </HashLink>
             </Button>
             <Button sx={itemstyle}>
-              <Link
+              <HashLink
                 to="/#Utilities"
                 style={{
                   textDecoration: "none",
@@ -267,11 +268,11 @@ function Header() {
                 }}
               >
                 Utilities
-              </Link>
+              </HashLink>
             </Button>
 
             <Button sx={itemstyle}>
-              <Link
+              <HashLink
                 to="/#Team"
                 style={{
                   textDecoration: "none",
@@ -280,11 +281,11 @@ function Header() {
                 }}
               >
                 Team
-              </Link>
+              </HashLink>
             </Button>
 
             <Button sx={itemstyle}>
-              <Link
+              <HashLink
                 to="/#Whitepaper"
                 style={{
                   textDecoration: "none",
@@ -293,11 +294,11 @@ function Header() {
                 }}
               >
                 Whitepaper
-              </Link>
+              </HashLink>
             </Button>
 
             <Button sx={itemstyle}>
-              <Link
+              <HashLink
                 to="/#FAQ"
                 style={{
                   textDecoration: "none",
@@ -306,20 +307,18 @@ function Header() {
                 }}
               >
                 FAQ
-              </Link>
+              </HashLink>
             </Button>
 
             <Button sx={itemstyle}>
-              <Link
+              <HashLink
                 to="/#Join"
                 style={{
                   textDecoration: "none",
                   color: "#E8F2FF",
                   textTransform: "none",
                 }}
-              >
-                Join
-              </Link>
+              ></HashLink>
             </Button>
 
             <Button
@@ -370,7 +369,20 @@ function Header() {
                 },
               }}
             >
-              Join Discord
+              <Link
+                href="https://discord.com/invite/ZMwKVNQEPe"
+                rel="noopener noreferrer"
+                target="_blank"
+                sx={{
+                  fontFamily: "Poppins",
+                  textDecoration: "none",
+                  color: "white",
+                  fontSize: { xs: "7px", lg: "10px" },
+                }}
+              >
+                {" "}
+                Join Discord
+              </Link>
             </Button>
 
             {/* <Button

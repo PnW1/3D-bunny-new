@@ -5,6 +5,7 @@ import discord_logo from "../Assets/discord-logo.png";
 import twitter from "../Assets/twitter.png";
 import Vector from "../Assets/Vector.png";
 import discord from "../Assets/discord-white.svg";
+import Link from "@mui/material/Link";
 const stylebodytext = {
   fontFamily: "Poppins",
   fontStyle: "normal",
@@ -63,9 +64,88 @@ const Footer = () => {
             mb: { xs: "-5px", sm: "0px" },
           }}
         >
-          <img style={{ width: "30px", height: "30px" }} src={discord}></img>
-          <Twitter sx={{ width: "30px", height: "30px", color: "white" }} />
-          <Instagram sx={{ width: "30px", height: "30px", color: "white" }} />
+          <Link
+            href="https://discord.com/invite/ZMwKVNQEPe"
+            rel="noopener noreferrer"
+            target="_blank"
+            sx={{
+              textDecoration: "none",
+
+              fontFamily: "Nandia",
+              fontStyle: "normal",
+              fontWeight: 100,
+              flex: "none",
+              order: 0,
+              flexGrow: 0,
+              fontSize: {
+                xl: "24px",
+                xs: "12px",
+                sm: "16px",
+                md: "20px",
+                lg: "24px",
+              },
+
+              color: "#ffffff",
+              textTransform: "uppercase",
+            }}
+          >
+            <img style={{ width: "30px", height: "30px" }} src={discord}></img>
+          </Link>
+
+          <Link
+            href="https://twitter.com/3dbunnypunksnft"
+            rel="noopener noreferrer"
+            target="_blank"
+            sx={{
+              textDecoration: "none",
+
+              fontFamily: "Nandia",
+              fontStyle: "normal",
+              fontWeight: 100,
+              flex: "none",
+              order: 0,
+              flexGrow: 0,
+              fontSize: {
+                xl: "24px",
+                xs: "12px",
+                sm: "16px",
+                md: "20px",
+                lg: "24px",
+              },
+
+              color: "#ffffff",
+              textTransform: "uppercase",
+            }}
+          >
+            <Twitter sx={{ width: "30px", height: "30px", color: "white" }} />
+          </Link>
+          <Link
+            href="https://www.instagram.com/3dbunnypunks_nft/"
+            rel="noopener noreferrer"
+            target="_blank"
+            sx={{
+              textDecoration: "none",
+
+              fontFamily: "Nandia",
+              fontStyle: "normal",
+              fontWeight: 100,
+              flex: "none",
+              order: 0,
+              flexGrow: 0,
+              fontSize: {
+                xl: "24px",
+                xs: "12px",
+                sm: "16px",
+                md: "20px",
+                lg: "24px",
+              },
+
+              color: "#ffffff",
+              textTransform: "uppercase",
+            }}
+          >
+            <Instagram sx={{ width: "30px", height: "30px", color: "white" }} />
+          </Link>
         </Box>
         <Box
           gap={2}

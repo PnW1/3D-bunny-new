@@ -2,7 +2,7 @@ import { Instagram, Twitter } from "@mui/icons-material";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import SickIcon from "@mui/icons-material/Sick";
-
+import Link from "@mui/material/Link";
 import joincommunity from "../Assets/joincommunity.png";
 import vector5 from "../Assets/vector5.png";
 import discord from "../Assets/discord-white.svg";
@@ -50,13 +50,13 @@ const JoinTheComunity = () => {
     fontStyle: "normal",
     fontWeight: 100,
     lineHeight: "35px",
-    padding: { sm: "5px 30px 5px 30px", xs: "2px 15px 2px 15px" },
+    padding: { sm: "5px 30px 5px 30px", xs: "2px 10px 2px 10px" },
     flex: "none",
     order: 0,
     flexGrow: 0,
     fontSize: {
       xl: "24px",
-      xs: "8px",
+      xs: "12px",
       sm: "16px",
       md: "20px",
       lg: "24px",
@@ -74,13 +74,13 @@ const JoinTheComunity = () => {
     fontStyle: "normal",
     fontWeight: 100,
     lineHeight: "35px",
-    padding: { sm: "5px 30px 5px 30px", xs: "2px 15px 2px 15px" },
+    padding: { sm: "5px 30px 5px 30px", xs: "2px 10px 2px 10px" },
     flex: "none",
     order: 0,
     flexGrow: 0,
     fontSize: {
       xl: "24px",
-      xs: "8px",
+      xs: "12px",
       sm: "16px",
       md: "20px",
       lg: "24px",
@@ -98,13 +98,13 @@ const JoinTheComunity = () => {
     fontStyle: "normal",
     fontWeight: 100,
     lineHeight: "35px",
-    padding: { sm: "5px 30px 5px 30px", xs: "2px 15px 2px 15px" },
+    padding: { sm: "5px 30px 5px 30px", xs: "2px 10px 2px 10px" },
     flex: "none",
     order: 0,
     flexGrow: 0,
     fontSize: {
       xl: "24px",
-      xs: "8px",
+      xs: "12px",
       sm: "16px",
       md: "20px",
       lg: "24px",
@@ -147,36 +147,90 @@ const JoinTheComunity = () => {
         <Box display="flex" width="90%" gap={2} justifyContent="center">
           <Button
             color="primary"
-            startIcon={
-              <img
-                style={{ width: "30px", height: "30px" }}
-                src={discord}
-              ></img>
-            }
+            startIcon={<img className="discordimage" src={discord}></img>}
             sx={btnstyle2}
             variant="contained"
           >
-            Discord
+            <Link
+              href="https://discord.com/invite/ZMwKVNQEPe"
+              rel="noopener noreferrer"
+              target="_blank"
+              sx={{
+                textDecoration: "none",
+
+                fontFamily: "Nandia",
+                fontStyle: "normal",
+                fontWeight: 100,
+                flex: "none",
+                order: 0,
+                flexGrow: 0,
+                fontSize: {
+                  xl: "24px",
+                  xs: "12px",
+                  sm: "16px",
+                  md: "20px",
+                  lg: "24px",
+                },
+
+                color: "#ffffff",
+                textTransform: "uppercase",
+              }}
+            >
+              {" "}
+              Discord
+            </Link>
           </Button>
           <Button
             startIcon={
               <Twitter
-                sx={{ width: "30px", height: "30px", color: "white" }}
+                sx={{
+                  width: { xs: "20px", sm: "30px" },
+                  height: { xs: "20px", sm: "30px" },
+                  color: "white",
+                }}
                 fontSize="large"
               />
             }
             sx={btnstyle}
             variant="contained"
           >
-            Twitter
+            {" "}
+            <Link
+              href="https://twitter.com/3dbunnypunksnft"
+              rel="noopener noreferrer"
+              target="_blank"
+              sx={{
+                textDecoration: "none",
+
+                fontFamily: "Nandia",
+                fontStyle: "normal",
+                fontWeight: 100,
+                flex: "none",
+                order: 0,
+                flexGrow: 0,
+                fontSize: {
+                  xl: "24px",
+                  xs: "12px",
+                  sm: "16px",
+                  md: "20px",
+                  lg: "24px",
+                },
+
+                color: "#ffffff",
+                textTransform: "uppercase",
+              }}
+            >
+              {" "}
+              Twitter
+            </Link>
           </Button>
           <Button
             color="secondary"
             startIcon={
               <Instagram
                 sx={{
-                  width: "30px",
-                  height: "30px",
+                  width: { xs: "15px", sm: "30px" },
+                  height: { xs: "15px", sm: "30px" },
                   color: "white",
                 }}
               />
@@ -184,7 +238,35 @@ const JoinTheComunity = () => {
             sx={btnstyle1}
             variant="contained"
           >
-            Instagram
+            {" "}
+            <Link
+              href="https://www.instagram.com/3dbunnypunks_nft/"
+              rel="noopener noreferrer"
+              target="_blank"
+              sx={{
+                textDecoration: "none",
+
+                fontFamily: "Nandia",
+                fontStyle: "normal",
+                fontWeight: 100,
+                flex: "none",
+                order: 0,
+                flexGrow: 0,
+                fontSize: {
+                  xl: "24px",
+                  xs: "12px",
+                  sm: "16px",
+                  md: "20px",
+                  lg: "24px",
+                },
+
+                color: "#ffffff",
+                textTransform: "uppercase",
+              }}
+            >
+              {" "}
+              Instagram
+            </Link>
           </Button>
         </Box>
       </Box>
