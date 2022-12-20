@@ -143,11 +143,18 @@ function Header() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              <MenuItem sx={{ display: "flex", flexDirection: "column" }}>
+              <MenuItem
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  color: "white",
+                }}
+              >
                 <Button sx={{ color: "black", display: "block" }}>
                   <HashLink
                     to="/#TheArt"
-                    style={{ textDecoration: "none", color: "#000" }}
+                    style={{ textDecoration: "none", color: "white" }}
                   >
                     The Art
                   </HashLink>
@@ -155,7 +162,7 @@ function Header() {
                 <Button sx={{ color: "white", display: "block" }}>
                   <HashLink
                     to="/#Roadmap"
-                    style={{ textDecoration: "none", color: "#000" }}
+                    style={{ textDecoration: "none", color: "white" }}
                   >
                     Roadmap
                   </HashLink>
@@ -163,7 +170,7 @@ function Header() {
                 <Button sx={{ color: "white", display: "block" }}>
                   <HashLink
                     to="/#Utilities"
-                    style={{ textDecoration: "none", color: "#000" }}
+                    style={{ textDecoration: "none", color: "white" }}
                   >
                     Utilities
                   </HashLink>
@@ -172,7 +179,7 @@ function Header() {
                 <Button sx={{ color: "white", display: "block" }}>
                   <HashLink
                     to="/#Team"
-                    style={{ textDecoration: "none", color: "#000" }}
+                    style={{ textDecoration: "none", color: "white" }}
                   >
                     Team
                   </HashLink>
@@ -181,7 +188,7 @@ function Header() {
                 <Button sx={{ color: "white", display: "block" }}>
                   <HashLink
                     to="/#Whitepaper"
-                    style={{ textDecoration: "none", color: "#000" }}
+                    style={{ textDecoration: "none", color: "white" }}
                   >
                     Whitepaper
                   </HashLink>
@@ -190,7 +197,7 @@ function Header() {
                 <Button sx={{ color: "white", display: "block" }}>
                   <HashLink
                     to="/#FAQ"
-                    style={{ textDecoration: "none", color: "#000" }}
+                    style={{ textDecoration: "none", color: "white" }}
                   >
                     FAQ
                   </HashLink>
@@ -199,7 +206,7 @@ function Header() {
                 <Button sx={{ color: "white", display: "block" }}>
                   <HashLink
                     to="/#Join"
-                    style={{ textDecoration: "none", color: "#000" }}
+                    style={{ textDecoration: "none", color: "white" }}
                   >
                     Join
                   </HashLink>
@@ -214,7 +221,6 @@ function Header() {
 
                   fontSize: { xs: "15px", lg: "10px" },
 
-                  borderRadius: "50px",
                   "&.MuiButton-contained": {
                     height: "40px",
 
@@ -236,7 +242,6 @@ function Header() {
                 sx={{
                   fontFamily: "Poppins",
 
-                  borderRadius: "50px",
                   "&.MuiButton-contained": {
                     height: "40px",
 
@@ -246,7 +251,7 @@ function Header() {
                 }}
               >
                 <Link
-                  href="https://discord.com/invite/ZMwKVNQEPe"
+                  href="https://discord.gg/3dbunnypunks"
                   rel="noopener noreferrer"
                   target="_blank"
                   sx={{
@@ -365,25 +370,36 @@ function Header() {
               height="100%"
               gap={1}
             >
-              <Button
-                variant="contained"
-                startIcon={<img className="discordimage" src={wallet}></img>}
+              <Link
+                href="https://discord.gg/3dbunnypunks"
+                rel="noopener noreferrer"
+                target="_blank"
                 sx={{
                   fontFamily: "Poppins",
-
+                  textDecoration: "none",
+                  color: "white",
                   fontSize: { xs: "7px", lg: "10px" },
-
-                  borderRadius: "50px",
-                  "&.MuiButton-contained": {
-                    height: "40px",
-
-                    alignSelf: "center",
-                    background: "#B80FBA",
-                  },
                 }}
               >
-                connect wallet
-              </Button>
+                <Button
+                  variant="contained"
+                  startIcon={<img className="discordimage" src={wallet}></img>}
+                  sx={{
+                    fontFamily: "Poppins",
+
+                    borderRadius: "50px",
+                    "&.MuiButton-contained": {
+                      height: "40px",
+
+                      alignSelf: "center",
+                      background: "#B80FBA",
+                    },
+                  }}
+                >
+                  connect wallet
+                </Button>
+              </Link>
+
               <Link
                 href="https://discord.gg/3dbunnypunks"
                 rel="noopener noreferrer"

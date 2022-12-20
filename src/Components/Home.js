@@ -3,6 +3,7 @@ import React from "react";
 import Header from "./Header";
 import homecircle from "../Assets/homecircle.png";
 import ScrolltoDown from "../Assets/ScrolltoDown.png";
+import elem from "../Assets/Animated Element.png";
 
 import grass from "../Assets/HeaderGrass.png";
 
@@ -112,12 +113,23 @@ const Home = () => {
           Welcome to the Bunny Hole
         </Button>
       </Box>
-      <Box sx={{ mb: { xs: "0px", xl: "-15px" } }}>
+      <Box sx={{ mb: { xs: "0px", xl: "-15px" } }} position="relative">
         <img
           style={{ width: "24px", height: "62px" }}
           src={ScrolltoDown}
           alt=""
         />
+
+        <img
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+          src={elem}
+          alt=""
+        ></img>
       </Box>
 
       <Box

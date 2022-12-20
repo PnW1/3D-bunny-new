@@ -184,7 +184,12 @@
   width: 30px;
   height: 30px;
 }
-
+@media (min-width: 0px) and (max-width: 600px) {
+  .discordimage {
+    width: 20px;
+    height: 20px;
+  }
+}
 @media (min-width: 0px) and (max-width: 600px) {
   .joinfirstbox {
     box-sizing: border-box;
@@ -304,4 +309,11 @@
     width: 20px;
     height: 20px;
   }
+}
+
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  width: 50% !important;
+  top: 7% !important;
+  right: 5% !important;
+  background-color: #25194c !important;
 }

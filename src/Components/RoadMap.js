@@ -73,8 +73,8 @@ const styleheadingtext = {
 };
 
 const stylebodytext = {
-  width: "80%",
-  textAlign: "center",
+  width: "85%",
+  textAlign: "justify",
   fontFamily: "Poppins",
   fontStyle: "normal",
 
@@ -184,8 +184,9 @@ const RoadMap = () => {
             </Typography>
           </Box>
           <Box
+            overflow="hidden"
             sx={{
-              marginTop: { xs: "20px", sm: "50px" },
+              marginTop: { xs: "20px", sm: "20px" },
               width: {
                 xs: "300px",
                 sm: "45%%",
@@ -201,7 +202,7 @@ const RoadMap = () => {
               Building Community
             </Typography>
             <Typography sx={stylebodytext}>
-              To pursue every goal, we will first take our time to build a solid
+              To pursue every goal,we will first take our time to build a solid
               community. Then, to ensure that the Community can claim actual
               ownership of we aim to create Community Voting on all significant
               decisions. As soon as the sale is over, we will set up a voting
@@ -210,11 +211,11 @@ const RoadMap = () => {
                 {" "}
                 {viewmore ? (
                   <>
-                    <Typography sx={stylebodytext}>
+                    <span>
                       {" "}
                       that will enable our holders to vote and give the project
                       a direction led by the Community.{" "}
-                    </Typography>
+                    </span>
                     <Button
                       color="primary"
                       onClick={() => setviewmore(!viewmore)}

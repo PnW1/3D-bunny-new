@@ -50,7 +50,7 @@ export default function BunnyTabs() {
     flex: "none",
     order: 0,
     flexGrow: 0,
-
+    fontSize: { xs: ".7em", sm: ".9em", md: "1em" },
     lineHeight: "140%",
     color: "white",
 
@@ -59,7 +59,7 @@ export default function BunnyTabs() {
     flexGrow: 0,
   };
   const boxfont = {
-    textAlign: "left",
+    textAlign: "justify",
 
     fontFamily: "Nandia",
     fontStyle: "normal",
@@ -245,7 +245,13 @@ export default function BunnyTabs() {
             <span>
               <br />
             </span>
+            <span>
+              <br />
+            </span>
             6% - Liquidity. Tokens for the liquidity pool.{" "}
+            <span>
+              <br />
+            </span>
             <span>
               <br />
             </span>
@@ -253,15 +259,24 @@ export default function BunnyTabs() {
             <span>
               <br />
             </span>{" "}
+            <span>
+              <br />
+            </span>
             5% - DAO. 3D Bunny Punks DAO funds.{" "}
             <span>
               <br />
             </span>{" "}
+            <span>
+              <br />
+            </span>
             1% - Airdrops.Token release airdrops for 3D Bunny Punks holders and
             project supporters.{" "}
             <span>
               <br />
             </span>{" "}
+            <span>
+              <br />
+            </span>
             5% - Treasury- Locked treasury that could be unlocked by community
             voting to achieve chosen goals. We will burn all $BUNNY used in
             utilities, and 5% of royalties will be used to buy back and burn
@@ -284,7 +299,10 @@ export default function BunnyTabs() {
             </span>{" "}
             [2023] Powered By- Unreal Engine 5 3D Bunny Punks uses blockchain
             technology to empower holders with actual digital ownership. Each
-            NFT is non-fungible, meaning unique, and no identical copy exists.
+            NFT is non-fungible, meaning unique, and no identical copy exists.{" "}
+            <span>
+              <br />
+            </span>
             It is indivisible and is not interchangeable. The time of purchasing
             video game character skins for single use is over now that 3D Bunny
             Punks is here. In-game avatars can be tokenised through blockchain
@@ -326,8 +344,14 @@ export default function BunnyTabs() {
             <span>
               <br />
             </span>
+            <span>
+              <br />
+            </span>
             <span style={{ fontWeight: "bold" }}>• </span>Orphanage homes.
             [India, Bangladesh, Nigeria]{" "}
+            <span>
+              <br />
+            </span>
             <span>
               <br />
             </span>
@@ -335,6 +359,9 @@ export default function BunnyTabs() {
             improve the air quality by planting over 500 trees, rehabilitating
             and rescuing domestic animals like rabbits e.t.c and educating
             people about pet care.{" "}
+            <span>
+              <br />
+            </span>
             <span>
               <br />
             </span>

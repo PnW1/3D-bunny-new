@@ -54,8 +54,8 @@ const JoinTheComunity = () => {
     lineHeight: "35px",
     padding: {
       xl: "12px 32px 12px 32px",
-      xs: "2px 10px 2px 10px",
-      sm: "5px 30px 5px 30px",
+      xs: "0px 10px 0px 10px",
+      sm: "0px 30px 0px 30px",
       md: "5px 30px 5px 30px",
       lg: "8px 30px 8px 30px",
     },
@@ -70,7 +70,7 @@ const JoinTheComunity = () => {
       lg: "24px",
     },
 
-    borderRadius: "50px",
+    borderRadius: { xs: "30px", sm: "50px" },
     "&.MuiButton-contained": {
       color: "white",
       borderColor: "white",
@@ -84,7 +84,7 @@ const JoinTheComunity = () => {
     lineHeight: "35px",
     padding: {
       xl: "12px 32px 12px 32px",
-      xs: "2px 10px 2px 10px",
+      xs: "0px 10px 0px 10px",
       sm: "5px 30px 5px 30px",
       md: "5px 30px 5px 30px",
       lg: "8px 30px 8px 30px",
@@ -100,7 +100,7 @@ const JoinTheComunity = () => {
       lg: "24px",
     },
 
-    borderRadius: "50px",
+    borderRadius: { xs: "30px", sm: "50px" },
     "&.MuiButton-contained": {
       color: "white",
       borderColor: "white",
@@ -114,7 +114,7 @@ const JoinTheComunity = () => {
     lineHeight: "35px",
     padding: {
       xl: "12px 32px 12px 32px",
-      xs: "2px 10px 2px 10px",
+      xs: "0px 10px 0px 10px",
       sm: "5px 30px 5px 30px",
       md: "5px 30px 5px 30px",
       lg: "8px 30px 8px 30px",
@@ -130,7 +130,7 @@ const JoinTheComunity = () => {
       lg: "24px",
     },
 
-    borderRadius: "50px",
+    borderRadius: { xs: "30px", sm: "50px" },
     "&.MuiButton-contained": {
       color: "white",
       borderColor: "white",
@@ -168,7 +168,7 @@ const JoinTheComunity = () => {
           display="flex"
           width="90%"
           gap={2}
-          sx={{ mt: { xs: 2, md: 3, xl: 5 } }}
+          sx={{ mt: { xs: 1, md: 3, xl: 5 } }}
           justifyContent="center"
         >
           <Button
@@ -192,7 +192,7 @@ const JoinTheComunity = () => {
                 flexGrow: 0,
                 fontSize: {
                   xl: "24px",
-                  xs: "12px",
+                  xs: "8px",
                   sm: "16px",
                   md: "20px",
                   lg: "24px",
@@ -228,7 +228,7 @@ const JoinTheComunity = () => {
                 flexGrow: 0,
                 fontSize: {
                   xl: "24px",
-                  xs: "12px",
+                  xs: "8px",
                   sm: "16px",
                   md: "20px",
                   lg: "24px",
@@ -264,7 +264,7 @@ const JoinTheComunity = () => {
                 flexGrow: 0,
                 fontSize: {
                   xl: "24px",
-                  xs: "12px",
+                  xs: "8px",
                   sm: "16px",
                   md: "20px",
                   lg: "24px",
