@@ -143,9 +143,12 @@ const Join = () => {
             <Box
               width="100%"
               display="flex"
-              flexWrap="wrap"
               justifyContent="space-between"
-              sx={{ gap: { xs: 2, sm: "0px" }, mt: { xs: 2, sm: "0px" } }}
+              sx={{
+                gap: { xs: 2, sm: "0px" },
+                mt: { xs: 2, sm: "0px" },
+                flexWrap: { xs: "wrap", sm: "nowrap" },
+              }}
             >
               <TextField
                 InputProps={{
