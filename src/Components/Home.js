@@ -15,7 +15,7 @@ const Home = () => {
     order: 0,
     flexGrow: 0,
     fontSize: {
-      xl: "70px",
+      xl: "60px",
       xs: "25px",
       sm: "35",
       md: "40px",
@@ -23,6 +23,7 @@ const Home = () => {
     },
     lineHeight: { xs: "50px", md: "103px" },
     color: "#ffffff",
+    textTransform: "uppercase",
   };
 
   const headingfont = {
@@ -48,7 +49,13 @@ const Home = () => {
     fontFamily: "Poppins",
     fontStyle: "normal",
 
-    padding: "5px 30px 5px 30px",
+    padding: {
+      xl: "16px 32px 16px 32px",
+      xs: "5px 30px 5px 30px",
+      sm: "5px 30px 5px 30px",
+      md: "5px 30px 5px 30px",
+      lg: "8px 30px 8px 30px",
+    },
 
     fontWeight: 400,
     flex: "none",
@@ -81,24 +88,36 @@ const Home = () => {
       xs={12}
       position="relative"
       sx={{
-        height: { xs: "100vh", sm: "110vh", md: "120vh" },
+        height: { xs: "100vh", sm: "110vh", md: "110vh" },
       }}
     >
       <Box
         width="100%"
-        height="50%"
+        height="45%"
         display="flex"
         flexDirection="column"
         alignItems="center"
+        justifyContent="center"
+        mt={10}
+        sx={{ gap: { xl: 2, xs: "0px" } }}
       >
-        <img src={homecircle} alt="" />
-        <Typography sx={bodyfont}>Welcome to</Typography>
+        <img src={homecircle} alt="" style={{ paddingTop: "50px" }} />
+        <Typography variant="h2" sx={bodyfont}>
+          Welcome to
+        </Typography>
         <Typography variant="h1" sx={headingfont}>
           3D Bunny Punks
         </Typography>
         <Button variant="outlined" sx={btnstyle}>
           Welcome to the Bunny Hole
         </Button>
+      </Box>
+      <Box sx={{ mb: { xs: "0px", xl: "-15px" } }}>
+        <img
+          style={{ width: "24px", height: "62px" }}
+          src={ScrolltoDown}
+          alt=""
+        />
       </Box>
 
       <Box
@@ -114,14 +133,9 @@ const Home = () => {
           backgroundImage: `url(${grass})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          mb: { xs: "-40px", xl: "-0px" },
         }}
-      >
-        <img
-          style={{ width: "24px", height: "62px" }}
-          src={ScrolltoDown}
-          alt=""
-        />
-      </Box>
+      ></Box>
     </Grid>
   );
 };

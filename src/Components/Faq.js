@@ -19,6 +19,25 @@ export default function Faq() {
 
   const [accordionOpen, setAccordionOpen] = React.useState(false);
 
+  const headingStyle = {
+    fontFamily: "Nandia",
+    fontStyle: "normal",
+    fontWeight: 400,
+    flex: "none",
+    order: 0,
+    flexGrow: 0,
+    fontSize: {
+      xl: "80px",
+      xs: "25px",
+      sm: "35px",
+      md: "40px",
+      lg: "70px",
+    },
+    lineHeight: "92px",
+    color: "#ffffff",
+    textTransform: "uppercase",
+  };
+
   return (
     <Grid
       id="FAQ"
@@ -27,6 +46,7 @@ export default function Faq() {
       display="flex"
       flexDirection="column"
       alignItems="center"
+      gap={5}
       pt={2}
       pb={5}
       xs={12}
@@ -37,8 +57,8 @@ export default function Faq() {
           "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
       }}
     >
-      <Typography className="headingStyle" fontSize="3em" textAlign="center">
-        faqs
+      <Typography sx={headingStyle} variant="h1" textAlign="center">
+        FAQ’s
       </Typography>
 
       <Box

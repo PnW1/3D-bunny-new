@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import React from "react";
 import Join from "./Join";
 
@@ -28,16 +28,23 @@ const LandingPage = () => {
       <Header />
       <Home />
       <JoinTheComunity />
-
       <TheArt />
+
       <RoadMap />
       <Utilities />
-
       <WhitePaper />
       <Team />
       <Faq />
       <Join />
       <Footer />
+      {/*
+     
+    
+      
+
+   
+ 
+     */}
     </Grid>
   );
 };

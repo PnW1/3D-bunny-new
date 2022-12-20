@@ -21,7 +21,12 @@ import art16 from "../Assets/16.png";
 import art17 from "../Assets/17.png";
 import art18 from "../Assets/18.png";
 import art19 from "../Assets/19.png";
-import art20 from "../Assets/20.png";
+import art20 from "../Assets/21.png";
+import art21 from "../Assets/22.png";
+import art22 from "../Assets/23.png";
+import art23 from "../Assets/24.png";
+import art24 from "../Assets/25.png";
+import art25 from "../Assets/49.png";
 
 import nftartimage from "../Assets/NFT-ART-IMAGE 1.svg";
 
@@ -93,11 +98,29 @@ const TheArt = () => {
     art18,
     art19,
     art20,
-    art1,
-    art2,
-    art3,
-    art4,
-    art5,
+    art21,
+    art22,
+    art23,
+    art24,
+    art25,
+  ];
+  const row3 = [
+    art18,
+    art19,
+    art20,
+    art21,
+    art22,
+    art23,
+    art24,
+    art25,
+    art10,
+    art13,
+    art14,
+    art15,
+    art16,
+
+    art16,
+    art17,
   ];
 
   return (
@@ -106,11 +129,16 @@ const TheArt = () => {
       container
       item
       xs={12}
+      sx={{
+        mb: { xl: 30, xs: 0, md: 5, lg: 10 },
+        mt: { xl: -5, xs: -30, md: -20, lg: -5 },
+      }}
       bgcolor="#030614"
       style={{
         position: "relative",
         borderTop: "5px #030614",
         borderTopStyle: "outset",
+        zIndex: 1,
       }}
     >
       <Box
@@ -119,7 +147,12 @@ const TheArt = () => {
         flexDirection="column"
         alignItems="center"
       >
-        <Typography pt={2} sx={headingfont} className="headingStyle">
+        <Typography
+          variant="h1"
+          pt={2}
+          sx={headingfont}
+          className="headingStyle"
+        >
           3D Bunny Art
         </Typography>
         <Typography pt={3} pb={3} sx={stylebodytext}>
@@ -132,7 +165,13 @@ const TheArt = () => {
           successful NFT projects in the space.
         </Typography>
       </Box>
-      <img className="artimage" src={nftartimage} alt="" />
+      <Box className="artimage">
+        <img
+          style={{ widows: "100%", height: "100%" }}
+          src={nftartimage}
+          alt=""
+        />
+      </Box>
       <Box width="100%" pt={2} pb={2}>
         <marquee
           style={{ width: "100%" }}
@@ -141,7 +180,11 @@ const TheArt = () => {
         >
           <Box width="100%" pb={2} display="flex" gap={2} flexWrap="nowrap">
             {row1.map((elem) => (
-              <img style={{ borderRadius: "10%" }} src={elem} alt="NFT" />
+              <img
+                style={{ borderRadius: "10%", width: "150px", height: "150px" }}
+                src={elem}
+                alt="NFT"
+              />
             ))}
           </Box>
         </marquee>
@@ -152,7 +195,11 @@ const TheArt = () => {
         >
           <Box width="100%" pb={2} display="flex" gap={2} flexWrap="nowrap">
             {row2.map((elem) => (
-              <img style={{ borderRadius: "10%" }} src={elem} alt="NFT" />
+              <img
+                style={{ borderRadius: "10%", width: "150px", height: "150px" }}
+                src={elem}
+                alt="NFT"
+              />
             ))}
           </Box>
         </marquee>
@@ -163,8 +210,12 @@ const TheArt = () => {
           behavior="alternate"
         >
           <Box width="100%" pb={2} display="flex" gap={2} flexWrap="nowrap">
-            {row1.reverse().map((elem) => (
-              <img style={{ borderRadius: "10%" }} src={elem} alt="NFT" />
+            {row3.map((elem) => (
+              <img
+                style={{ borderRadius: "10%", width: "150px", height: "150px" }}
+                src={elem}
+                alt="NFT"
+              />
             ))}
           </Box>
         </marquee>

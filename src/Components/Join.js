@@ -37,14 +37,16 @@ const stylebodytext = {
   order: 0,
   flexGrow: 0,
   fontSize: {
-    xl: "17px",
+    xl: "18px",
     xs: "10px",
     sm: "10px",
     md: "13px",
     lg: "15px",
   },
-  lineHeight: "140%",
+  lineHeight: "170%",
   color: "white",
+  textAlign: "center",
+  alignSelf: "stretch",
 };
 
 const Join = () => {
@@ -54,7 +56,23 @@ const Join = () => {
     [`& fieldset`]: {
       fontVariant: "outlined",
       size: "small",
-      borderRadius: "20px",
+      borderRadius: "50px",
+      borderColor: "white",
+    },
+    "& .MuiOutlinedInput-root:hover": {
+      "& > fieldset": {
+        borderColor: "white",
+      },
+    },
+  };
+
+  const textareastyle = {
+    input: { color: "white" },
+    label: { color: "white" },
+    [`& fieldset`]: {
+      fontVariant: "outlined",
+      size: "small",
+      borderRadius: "30px",
       borderColor: "white",
     },
     "& .MuiOutlinedInput-root:hover": {
@@ -76,11 +94,9 @@ const Join = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <Box className="joinfirstbox">
-          <Typography sx={headingfont} height="20%">
-            Join the Community
-          </Typography>
-          <Typography sx={stylebodytext} height="80%" overflow="auto">
+        <Box className="joinfirstbox" gap={2}>
+          <Typography sx={headingfont}>Join the Community</Typography>
+          <Typography sx={stylebodytext} overflow="auto">
             Now that you have been informed on what the 3D Bunny Punks is all
             about, the only thing left to do for you is to become an active
             member of the 3D Bunny Punks Community - on Discord, Twitter and
@@ -101,19 +117,35 @@ const Join = () => {
           width="100%"
           height="100%"
           display="flex"
+          flexDirection="column"
           justifyContent="center"
           alignItems="center"
           sx={{
             background:
               "linear-gradient(to right top, #00B8FF 0%, #00B8FF 50%, transparent 50%)",
           }}
+          gap={4}
         >
-          <Box className="joinfirstbox">
+          <Typography
+            className="headingStyle"
+            textAlign="center"
+            sx={{
+              fontSize: { xs: "1.5em", md: "2em", xl: "3em" },
+              width: { xs: "90%", sm: "80%" },
+            }}
+          >
+            Want to Ask Something?
+          </Typography>
+          <Typography width="80%" textAlign="center" color="white">
+            Feel free to submit your Query .
+          </Typography>
+          <Box className="joinfirstbox" gap={3}>
             <Box
               width="100%"
-              gap={2}
               display="flex"
+              flexWrap="wrap"
               justifyContent="space-between"
+              sx={{ gap: { xs: 2, sm: "0px" }, mt: { xs: 2, sm: "0px" } }}
             >
               <TextField
                 InputProps={{
@@ -123,7 +155,7 @@ const Join = () => {
                     </InputAdornment>
                   ),
                 }}
-                placeholder="Please enter text"
+                placeholder="Please enter Name"
                 sx={textfieldstyle}
               />
               <TextField
@@ -134,7 +166,7 @@ const Join = () => {
                     </InputAdornment>
                   ),
                 }}
-                placeholder="Please enter text"
+                placeholder="Please enter Email"
                 sx={textfieldstyle}
               />
             </Box>
@@ -147,7 +179,7 @@ const Join = () => {
                   </InputAdornment>
                 ),
               }}
-              placeholder="Please enter text"
+              placeholder="Please enter Phone"
               sx={textfieldstyle}
             />
 
@@ -156,15 +188,30 @@ const Join = () => {
               minRows={4}
               fullWidth
               placeholder="Please enter text"
-              sx={textfieldstyle}
+              sx={textareastyle}
             />
             <Button
               variant="contained"
-              color="primary"
               sx={{
-                alignSelf: "start",
+                fontFamily: "Poppins",
+
                 width: "40%",
+                fontSize: { xs: "7px", lg: "15px" },
+
                 borderRadius: "50px",
+                "&.MuiButton-contained": {
+                  height: "40px",
+
+                  alignSelf: "start",
+                  background: "black",
+                },
+                padding: {
+                  xl: "12px 32px 12px 32px",
+                  xs: "2px 10px 2px 10px",
+                  sm: "5px 30px 5px 30px",
+                  md: "5px 30px 5px 30px",
+                  lg: "8px 30px 8px 30px",
+                },
               }}
             >
               Submit

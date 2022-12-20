@@ -4,7 +4,7 @@ import React from "react";
 import BunnyTabs from "./BunnyTabs";
 
 const stylebodytext = {
-  width: "60%",
+  width: "55%",
   textAlign: "center",
   fontFamily: "Poppins",
   fontStyle: "normal",
@@ -37,11 +37,30 @@ const boxfont = {
   order: 0,
   flexGrow: 0,
   fontSize: {
-    xl: "18px",
+    xl: "24px",
     xs: "14px",
     sm: "15px",
     md: "16px",
     lg: "24px",
+  },
+  lineHeight: "40px",
+  textTransform: "uppercase",
+};
+const boxfontblack = {
+  textAlign: "center",
+  fontFamily: "Nandia",
+  fontStyle: "normal",
+  fontWeight: 400,
+
+  flex: "none",
+  order: 0,
+  flexGrow: 0,
+  fontSize: {
+    xl: "20px",
+    xs: "12px",
+    sm: "12px",
+    md: "14px",
+    lg: "18px",
   },
   lineHeight: "40px",
   textTransform: "uppercase",
@@ -101,6 +120,7 @@ const Utilities = () => {
       display="flex"
       flexDirection="column"
       alignItems="center"
+      mt={2}
       pt={2}
       xs={12}
       sx={{
@@ -145,7 +165,7 @@ const Utilities = () => {
             15% of every sale in the secondary marketplace goes into the pool
             won by 50 holders every Sunday.{" "}
           </Typography>
-          <Typography sx={boxfont} color="black">
+          <Typography sx={boxfontblack} color="black">
             [A constant supply of funds to the pool & an endless distribution
             process for the holders]
           </Typography>
@@ -168,13 +188,20 @@ const Utilities = () => {
           <Typography sx={boxfont} color="white">
             15% of MINT INCOME goes into the Raffle Pool initially.
           </Typography>
-          <Typography sx={boxfont} color="black">
-            [A constant supply of funds to the pool & an endless distribution
-            process for the holders]
+          <Typography sx={boxfontblack} color="black">
+            [As soon as we sell out, we will deposit 15% into the Raffle Pool]
           </Typography>
         </Box>
       </Box>
-      <Typography sx={boxfont} color="white" width="70%" pt={5} pb={5}>
+      <Typography
+        style={{ fontStyle: "italic" }}
+        sx={boxfont}
+        color="white"
+        width="50%"
+        pt={5}
+        pb={5}
+        mb={5}
+      >
         "By holding more Bunnies, you increase your chances of winning. If you
         decide to sell your Bunny, you'll be helping to fund the pool."
       </Typography>
@@ -195,7 +222,7 @@ const Utilities = () => {
           borderRadius: "12px",
         }}
       >
-        <Box width="90%" height="80%" display="flex" flexWrap="nowrap">
+        <Box width="90%" height="80%" display="flex" flexWrap="nowrap" mb={-5}>
           <BunnyTabs />
         </Box>
       </Box>

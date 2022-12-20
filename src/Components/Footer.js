@@ -1,9 +1,8 @@
 import { Instagram, Twitter } from "@mui/icons-material";
 import { Avatar, Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import discord_logo from "../Assets/discord-logo.png";
-import twitter from "../Assets/twitter.png";
-import Vector from "../Assets/Vector.png";
+import instagramfill from "../Assets/instagram-fill.svg";
+import twitterlogo from "../Assets/twitter-logo.svg";
 import discord from "../Assets/discord-white.svg";
 import Link from "@mui/material/Link";
 const stylebodytext = {
@@ -50,115 +49,94 @@ const Footer = () => {
         gap={2}
         display="flex"
         alignItems="center"
-        justifyContent="space-around"
+        justifyContent="center"
         sx={{ width: { xs: "100%", sm: "60%", flexWrap: "wrap" } }}
       >
-        <Box
-          gap={2}
+        <Link
+          href="https://discord.gg/3dbunnypunks"
+          rel="noopener noreferrer"
+          target="_blank"
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: { xs: "100%", sm: "45%" },
-            mt: { xs: "5px", sm: "0px" },
-            mb: { xs: "-5px", sm: "0px" },
+            textDecoration: "none",
+
+            fontFamily: "Nandia",
+            fontStyle: "normal",
+            fontWeight: 100,
+            flex: "none",
+            order: 0,
+            flexGrow: 0,
+            fontSize: {
+              xl: "24px",
+              xs: "12px",
+              sm: "16px",
+              md: "20px",
+              lg: "24px",
+            },
+
+            color: "#ffffff",
+            textTransform: "uppercase",
           }}
         >
-          <Link
-            href="https://discord.com/invite/ZMwKVNQEPe"
-            rel="noopener noreferrer"
-            target="_blank"
-            sx={{
-              textDecoration: "none",
+          <img className="iconsize" src={discord}></img>
+        </Link>
 
-              fontFamily: "Nandia",
-              fontStyle: "normal",
-              fontWeight: 100,
-              flex: "none",
-              order: 0,
-              flexGrow: 0,
-              fontSize: {
-                xl: "24px",
-                xs: "12px",
-                sm: "16px",
-                md: "20px",
-                lg: "24px",
-              },
-
-              color: "#ffffff",
-              textTransform: "uppercase",
-            }}
-          >
-            <img style={{ width: "30px", height: "30px" }} src={discord}></img>
-          </Link>
-
-          <Link
-            href="https://twitter.com/3dbunnypunksnft"
-            rel="noopener noreferrer"
-            target="_blank"
-            sx={{
-              textDecoration: "none",
-
-              fontFamily: "Nandia",
-              fontStyle: "normal",
-              fontWeight: 100,
-              flex: "none",
-              order: 0,
-              flexGrow: 0,
-              fontSize: {
-                xl: "24px",
-                xs: "12px",
-                sm: "16px",
-                md: "20px",
-                lg: "24px",
-              },
-
-              color: "#ffffff",
-              textTransform: "uppercase",
-            }}
-          >
-            <Twitter sx={{ width: "30px", height: "30px", color: "white" }} />
-          </Link>
-          <Link
-            href="https://www.instagram.com/3dbunnypunks_nft/"
-            rel="noopener noreferrer"
-            target="_blank"
-            sx={{
-              textDecoration: "none",
-
-              fontFamily: "Nandia",
-              fontStyle: "normal",
-              fontWeight: 100,
-              flex: "none",
-              order: 0,
-              flexGrow: 0,
-              fontSize: {
-                xl: "24px",
-                xs: "12px",
-                sm: "16px",
-                md: "20px",
-                lg: "24px",
-              },
-
-              color: "#ffffff",
-              textTransform: "uppercase",
-            }}
-          >
-            <Instagram sx={{ width: "30px", height: "30px", color: "white" }} />
-          </Link>
-        </Box>
-        <Box
-          gap={2}
+        <Link
+          href="https://twitter.com/3dbunnypunksnft"
+          rel="noopener noreferrer"
+          target="_blank"
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: { xs: "100%", sm: "45%" },
+            textDecoration: "none",
+
+            fontFamily: "Nandia",
+            fontStyle: "normal",
+            fontWeight: 100,
+            flex: "none",
+            order: 0,
+            flexGrow: 0,
+            fontSize: {
+              xl: "24px",
+              xs: "12px",
+              sm: "16px",
+              md: "20px",
+              lg: "24px",
+            },
+
+            color: "#ffffff",
+            textTransform: "uppercase",
           }}
         >
-          <Typography sx={stylebodytext}> Terms of Services</Typography>
-          <Typography sx={stylebodytext}> Privacy Policy</Typography>
-        </Box>
+          <img className="iconsize" src={twitterlogo}></img>
+        </Link>
+        <Link
+          href="https://www.instagram.com/3dbunnypunks_nft/"
+          rel="noopener noreferrer"
+          target="_blank"
+          sx={{
+            textDecoration: "none",
+
+            fontFamily: "Nandia",
+            fontStyle: "normal",
+            fontWeight: 100,
+            flex: "none",
+            order: 0,
+            flexGrow: 0,
+            fontSize: {
+              xl: "24px",
+              xs: "12px",
+              sm: "16px",
+              md: "20px",
+              lg: "24px",
+            },
+
+            color: "#ffffff",
+            textTransform: "uppercase",
+          }}
+        >
+          <img className="iconsize" src={instagramfill}></img>
+        </Link>
+
+        <Typography sx={stylebodytext}> Terms of Services</Typography>
+        <Typography sx={stylebodytext}> Privacy Policy</Typography>
       </Box>
     </Grid>
   );

@@ -90,6 +90,7 @@ const Team = () => {
       display="flex"
       flexDirection="column"
       alignItems="center"
+      gap={3}
       pt={2}
       pb={2}
       sx={{
@@ -100,7 +101,7 @@ const Team = () => {
       }}
       xs={12}
     >
-      <Typography sx={headingfont} textAlign="center">
+      <Typography sx={headingfont} variant="h1" textAlign="center">
         Team
       </Typography>
       <Typography
@@ -125,10 +126,10 @@ const Team = () => {
       <Box
         display="flex"
         justifyContent="center"
-        gap={2}
         flexWrap="wrap"
         mt={5}
         mb={5}
+        sx={{ width: { xs: "100%", xl: "80%" }, gap: { xs: 2, xl: 6 } }}
       >
         <Box className="teamboxstyle">
           <img src={profileimage} className="teamimage1" alt="" />

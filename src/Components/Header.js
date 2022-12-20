@@ -12,7 +12,9 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import logo from "../Assets/logo.png";
+import logo from "../Assets/logo.svg";
+import wallet from "../Assets/wallet-light.svg";
+import discord from "../Assets/discord-white.svg";
 
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { DiscFull, Wallet } from "@mui/icons-material";
@@ -47,7 +49,10 @@ const itemstyle = {
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Header() {
-  const trigger = useScrollTrigger();
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 60,
+  });
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -77,14 +82,30 @@ function Header() {
           : { background: "transparent", elevation: 1 }
       }
     >
-      <Container maxWidth="xl" sx={{ display: "flex", width: "100%" }}>
+      <Container
+        maxWidth="xl"
+        sx={{
+          display: "flex",
+          width: "100%",
+          alignItems: "center",
+          height: { xs: "50px", md: "80px" },
+        }}
+      >
         <Box
           width="20%"
+          height="80px"
           display="flex"
           alignItems="center"
           justifyContent="center"
         >
-          <Avatar src={logo} alt="logo" />
+          <Avatar
+            sx={{
+              width: { xs: "40px", md: "79px" },
+              height: { xs: "40px", md: "60px" },
+            }}
+            src={logo}
+            alt="logo"
+          />
         </Box>
 
         <Box width="80%">
@@ -187,47 +208,64 @@ function Header() {
 
               <Button
                 variant="contained"
-                color="secondary"
-                startIcon={<Wallet />}
-                fullWidth
+                startIcon={<img className="discordimage" src={wallet}></img>}
                 sx={{
                   fontFamily: "Poppins",
 
-                  fontSize: "10px",
-                  borderRadius: "5px",
+                  fontSize: { xs: "15px", lg: "10px" },
+
+                  borderRadius: "50px",
                   "&.MuiButton-contained": {
                     height: "40px",
 
                     alignSelf: "center",
+                    background: "#B80FBA",
                   },
                 }}
+                fullWidth
               >
                 connect wallet
               </Button>
               <Button
+                mt={2}
+                mb={2}
+                fullWidth
                 variant="contained"
                 color="primary"
-                startIcon={<Wallet />}
-                fullWidth
+                startIcon={<img className="discordimage" src={discord}></img>}
                 sx={{
                   fontFamily: "Poppins",
 
-                  fontSize: "10px",
-                  borderRadius: "5px",
+                  borderRadius: "50px",
                   "&.MuiButton-contained": {
                     height: "40px",
 
                     alignSelf: "center",
+                    background: "#221669",
                   },
                 }}
               >
-                Join Discord
+                <Link
+                  href="https://discord.com/invite/ZMwKVNQEPe"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  sx={{
+                    fontFamily: "Poppins",
+                    textDecoration: "none",
+                    color: "white",
+                    fontSize: { xs: "15px", lg: "10px" },
+                  }}
+                >
+                  {" "}
+                  Join Discord
+                </Link>
               </Button>
             </Menu>
           </Box>
           <Box
             width="100%"
             display="flex"
+            justifyContent="flex-end"
             gap={1}
             sx={{
               flexGrow: 1,
@@ -320,57 +358,34 @@ function Header() {
                 }}
               ></HashLink>
             </Button>
-
-            <Button
-              variant="contained"
-              color="secondary"
-              startIcon={
-                <Wallet
-                  sx={{
-                    width: { xs: "15px", lg: "24px" },
-                    height: { xs: "15px", lg: "24px" },
-                  }}
-                />
-              }
-              sx={{
-                fontFamily: "Poppins",
-
-                fontSize: { xs: "7px", lg: "10px" },
-                borderRadius: "5px",
-                "&.MuiButton-contained": {
-                  height: "40px",
-
-                  alignSelf: "center",
-                },
-              }}
+            <Box
+              display="flex"
+              alignItems="center"
+              alignSelf="center"
+              height="100%"
+              gap={1}
             >
-              connect wallet
-            </Button>
-            <Button
-              variant="contained"
-              color="primary"
-              startIcon={
-                <Wallet
-                  sx={{
-                    width: { xs: "15px", lg: "24px" },
-                    height: { xs: "15px", lg: "24px" },
-                  }}
-                />
-              }
-              sx={{
-                fontFamily: "Poppins",
+              <Button
+                variant="contained"
+                startIcon={<img className="discordimage" src={wallet}></img>}
+                sx={{
+                  fontFamily: "Poppins",
 
-                fontSize: { xs: "7px", lg: "10px" },
-                borderRadius: "5px",
-                "&.MuiButton-contained": {
-                  height: "40px",
+                  fontSize: { xs: "7px", lg: "10px" },
 
-                  alignSelf: "center",
-                },
-              }}
-            >
+                  borderRadius: "50px",
+                  "&.MuiButton-contained": {
+                    height: "40px",
+
+                    alignSelf: "center",
+                    background: "#B80FBA",
+                  },
+                }}
+              >
+                connect wallet
+              </Button>
               <Link
-                href="https://discord.com/invite/ZMwKVNQEPe"
+                href="https://discord.gg/3dbunnypunks"
                 rel="noopener noreferrer"
                 target="_blank"
                 sx={{
@@ -380,11 +395,27 @@ function Header() {
                   fontSize: { xs: "7px", lg: "10px" },
                 }}
               >
-                {" "}
-                Join Discord
-              </Link>
-            </Button>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  startIcon={<img className="discordimage" src={discord}></img>}
+                  sx={{
+                    fontFamily: "Poppins",
 
+                    borderRadius: "50px",
+                    "&.MuiButton-contained": {
+                      height: "40px",
+
+                      alignSelf: "center",
+                      background: "#221669",
+                    },
+                  }}
+                >
+                  {" "}
+                  Join Discord
+                </Button>
+              </Link>
+            </Box>
             {/* <Button
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}

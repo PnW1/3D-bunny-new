@@ -4,6 +4,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import { Divider } from "@mui/material";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -59,8 +60,7 @@ export default function BunnyTabs() {
   };
   const boxfont = {
     textAlign: "left",
-    borderRight: 1,
-    borderColor: "divider",
+
     fontFamily: "Nandia",
     fontStyle: "normal",
     fontWeight: 400,
@@ -104,6 +104,7 @@ export default function BunnyTabs() {
         <Tabs
           orientation="vertical"
           variant="scrollable"
+          indicatorColor="none"
           value={value}
           onChange={handleChange}
           aria-label="Vertical tabs example"
@@ -114,6 +115,7 @@ export default function BunnyTabs() {
               textAlign: "left",
               alignSelf: "start",
               alignContent: "start",
+              width: "100%",
               fontSize: {
                 xs: "12px",
                 sm: "15px",
@@ -124,6 +126,7 @@ export default function BunnyTabs() {
             label="$BUNNY tokens & staking system"
             {...a11yProps(0)}
           />
+          {/* <Divider style={{ background: "rgba(0, 184, 255, 0.5)" }} /> */}
           <Tab
             sx={{
               textAlign: "left",
@@ -139,6 +142,7 @@ export default function BunnyTabs() {
             label="Land in the Metaverse"
             {...a11yProps(1)}
           />
+
           <Tab
             sx={{
               textAlign: "left",
@@ -154,6 +158,7 @@ export default function BunnyTabs() {
             label="Mint Pass "
             {...a11yProps(2)}
           />
+
           <Tab
             sx={{
               textAlign: "left",
@@ -169,6 +174,7 @@ export default function BunnyTabs() {
             label="Exceptional Rendering Quality "
             {...a11yProps(3)}
           />
+
           <Tab
             sx={{
               textAlign: "left",
@@ -184,6 +190,7 @@ export default function BunnyTabs() {
             label="Giveaways"
             {...a11yProps(4)}
           />
+
           <Tab
             sx={{
               textAlign: "left",
@@ -199,6 +206,7 @@ export default function BunnyTabs() {
             label="Comic Book"
             {...a11yProps(5)}
           />
+
           <Tab
             sx={{
               textAlign: "left",
@@ -245,8 +253,12 @@ export default function BunnyTabs() {
             <span>
               <br />
             </span>{" "}
-            5% - DAO. 3D Bunny Punks DAO funds. 1% - Airdrops.Token release
-            airdrops for 3D Bunny Punks holders and project supporters.{" "}
+            5% - DAO. 3D Bunny Punks DAO funds.{" "}
+            <span>
+              <br />
+            </span>{" "}
+            1% - Airdrops.Token release airdrops for 3D Bunny Punks holders and
+            project supporters.{" "}
             <span>
               <br />
             </span>{" "}
@@ -280,7 +292,7 @@ export default function BunnyTabs() {
           </Typography>
         </TabPanel>
         <TabPanel value={value} index={2}>
-          <Typography mt={5} sx={stylebodytext}>
+          <Typography sx={stylebodytext}>
             The NFT acts as a mint pass for future drops meaning holders of the
             3D Bunny Punks NFT have early access to future collections.
           </Typography>
@@ -295,7 +307,7 @@ export default function BunnyTabs() {
           </Typography>
         </TabPanel>
         <TabPanel value={value} index={4}>
-          <Typography mt={5} sx={stylebodytext}>
+          <Typography sx={stylebodytext}>
             3D Bunny Punks holders are eligible to participate in regular
             giveaways, raffles, quizzes, trivia nights, and fun initiatives that
             reward members of the 3D Bunny Punks. Rewards might range from
@@ -308,7 +320,7 @@ export default function BunnyTabs() {
             and comic artist] Each episode contains exciting stories.
           </Typography>
         </TabPanel>
-        <TabPanel mt={5} value={value} index={6}>
+        <TabPanel value={value} index={6}>
           <Typography sx={stylebodytext}>
             3D bunny punks will be helping,
             <span>

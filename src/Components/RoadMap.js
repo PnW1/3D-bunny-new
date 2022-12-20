@@ -1,6 +1,9 @@
 import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
+import { typography } from "@mui/system";
+import React, { useState } from "react";
+import Button from "@mui/material/Button";
 import roadmapbg from "../Assets/roadmapbg.png";
+import Divider from "@mui/material/Divider";
 const PhaseStyle = {
   fontFamily: "Nandia",
   fontStyle: "normal",
@@ -8,7 +11,7 @@ const PhaseStyle = {
   flex: "none",
   order: 0,
   flexGrow: 0,
-  width: { xs: "30%", sm: "25%", lg: "15%" },
+  width: { xs: "40%", sm: "35%", lg: "25%" },
   fontSize: {
     xs: "20px",
     sm: "30px",
@@ -24,7 +27,7 @@ const PhaseStyle = {
 const boxstyle = {
   borderRadius: "12px",
   display: "flex",
-
+  border: "1px solid #64108E",
   alignItems: "center",
   flexDirection: "column",
   background:
@@ -34,15 +37,14 @@ const boxstyle = {
 };
 
 const boxstyle1 = {
-  height: "350px",
   borderRadius: "12px",
   display: "flex",
-
+  border: "1px solid #64108E",
   alignItems: "center",
   flexDirection: "column",
   background:
     "linear-gradient(180deg, rgba(214, 0, 255, 0.0572) 0%, rgba(0, 184, 255, 0.0572) 100%)",
-  width: { xs: "300px", sm: "45%", md: "30%", xl: "301px" },
+
   boxSizing: "border-box",
 };
 
@@ -62,6 +64,7 @@ const styleheadingtext = {
     lg: "20px",
     xl: "24px",
   },
+
   lineHeight: "36px",
   color: "#ffffff",
 
@@ -91,6 +94,9 @@ const stylebodytext = {
 };
 
 const RoadMap = () => {
+  const [viewmore, setviewmore] = useState(false);
+  const [viewless, setviewless] = useState(false);
+
   const headingfont = {
     fontFamily: "Nandia",
     fontStyle: "normal",
@@ -123,6 +129,7 @@ const RoadMap = () => {
         backgroundImage: `url(${roadmapbg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        zIndex: 2,
       }}
       pb={2}
     >
@@ -130,11 +137,16 @@ const RoadMap = () => {
         RoadMAp
       </Typography>
 
-      <Box width="90%" display="flex" flexDirection="column">
+      <Box
+        sx={{ width: { xs: "90%", xl: "80%" } }}
+        display="flex"
+        flexDirection="column"
+      >
         <Box display="flex" justifyContent="flex-end" alignItems="center">
           <Typography width="50%">
-            <hr />
+            <Divider style={{ background: "#64108E" }} />
           </Typography>
+
           <Typography textAlign="end" sx={PhaseStyle}>
             Phase I
           </Typography>
@@ -143,9 +155,9 @@ const RoadMap = () => {
         <Box
           display="flex"
           width="100%"
-          gap={2}
           flexWrap="wrap"
           justifyContent="space-around"
+          sx={{ gap: { xs: 2, xl: 5 } }}
         >
           <Box
             sx={{
@@ -155,9 +167,10 @@ const RoadMap = () => {
                 sm: "45%%",
                 md: "30%",
                 lg: "22%",
-                xl: "301px",
+                xl: "330px",
               },
               height: { xs: "350px", sm: "422px" },
+              border: "1px solid #64108E",
             }}
             style={boxstyle}
           >
@@ -178,7 +191,7 @@ const RoadMap = () => {
                 sm: "45%%",
                 md: "30%",
                 lg: "22%",
-                xl: "301px",
+                xl: "330px",
               },
               height: { xs: "350px", sm: "422px" },
             }}
@@ -190,9 +203,34 @@ const RoadMap = () => {
             <Typography sx={stylebodytext}>
               To pursue every goal, we will first take our time to build a solid
               community. Then, to ensure that the Community can claim actual
-              ownership of the project, we aim to create Community Voting on all
-              significant decisions. As soon as the sale is over, we will set up
-              a voting platform that will ... View more
+              ownership of we aim to create Community Voting on all significant
+              decisions. As soon as the sale is over, we will set up a voting
+              platform{" "}
+              <span>
+                {" "}
+                {viewmore ? (
+                  <>
+                    <Typography sx={stylebodytext}>
+                      {" "}
+                      that will enable our holders to vote and give the project
+                      a direction led by the Community.{" "}
+                    </Typography>
+                    <Button
+                      color="primary"
+                      onClick={() => setviewmore(!viewmore)}
+                    >
+                      view less
+                    </Button>
+                  </>
+                ) : (
+                  <Button
+                    color="primary"
+                    onClick={() => setviewmore(!viewmore)}
+                  >
+                    ...view more
+                  </Button>
+                )}
+              </span>{" "}
             </Typography>
           </Box>{" "}
           <Box
@@ -203,7 +241,7 @@ const RoadMap = () => {
                 sm: "45%%",
                 md: "30%",
                 lg: "22%",
-                xl: "301px",
+                xl: "330px",
               },
               height: { xs: "350px", sm: "422px" },
             }}
@@ -227,7 +265,7 @@ const RoadMap = () => {
                 sm: "45%%",
                 md: "30%",
                 lg: "22%",
-                xl: "301px",
+                xl: "330px",
               },
               height: { xs: "350px", sm: "422px" },
             }}
@@ -245,7 +283,11 @@ const RoadMap = () => {
           </Box>
         </Box>
       </Box>
-      <Box width="90%" display="flex" flexDirection="column">
+      <Box
+        sx={{ width: { xs: "90%", xl: "80%" } }}
+        display="flex"
+        flexDirection="column"
+      >
         <Box
           display="flex"
           justifyContent="flex-start"
@@ -256,14 +298,14 @@ const RoadMap = () => {
             Phase II
           </Typography>
           <Typography width="50%">
-            <hr />
+            <Divider style={{ background: "#64108E" }} />
           </Typography>
         </Box>
 
         <Box
           display="flex"
           width="100%"
-          gap={2}
+          sx={{ gap: { xs: 2, xl: 5 } }}
           flexWrap="wrap"
           justifyContent="space-around"
         >
@@ -275,8 +317,9 @@ const RoadMap = () => {
                 sm: "45%%",
                 md: "30%",
                 lg: "22%",
-                xl: "301px",
+                xl: "400px",
               },
+              height: { xs: "350px", sm: "422px" },
             }}
             style={boxstyle1}
           >
@@ -296,8 +339,9 @@ const RoadMap = () => {
                 sm: "45%%",
                 md: "30%",
                 lg: "22%",
-                xl: "301px",
+                xl: "400px",
               },
+              height: { xs: "350px", sm: "422px" },
             }}
             style={boxstyle1}
           >
@@ -319,8 +363,9 @@ const RoadMap = () => {
                 sm: "45%%",
                 md: "30%",
                 lg: "22%",
-                xl: "301px",
+                xl: "400px",
               },
+              height: { xs: "350px", sm: "422px" },
             }}
             style={boxstyle1}
           >
@@ -333,7 +378,11 @@ const RoadMap = () => {
           </Box>{" "}
         </Box>
       </Box>
-      <Box width="90%" display="flex" flexDirection="column">
+      <Box
+        sx={{ width: { xs: "90%", xl: "80%" } }}
+        display="flex"
+        flexDirection="column"
+      >
         <Box
           display="flex"
           justifyContent="flex-end"
@@ -341,7 +390,7 @@ const RoadMap = () => {
           mt={4}
         >
           <Typography width="50%">
-            <hr />
+            <Divider style={{ background: "#64108E" }} />
           </Typography>
           <Typography textAlign="end" sx={PhaseStyle}>
             Phase III
@@ -362,8 +411,9 @@ const RoadMap = () => {
                 sm: "45%%",
                 md: "30%",
                 lg: "22%",
-                xl: "301px",
+                xl: "400px",
               },
+              height: { xs: "350px", sm: "422px" },
             }}
             style={boxstyle1}
           >
@@ -383,8 +433,9 @@ const RoadMap = () => {
                 sm: "45%%",
                 md: "30%",
                 lg: "22%",
-                xl: "301px",
+                xl: "400px",
               },
+              height: { xs: "350px", sm: "422px" },
             }}
             style={boxstyle1}
           >
@@ -405,8 +456,9 @@ const RoadMap = () => {
                 sm: "45%%",
                 md: "30%",
                 lg: "22%",
-                xl: "301px",
+                xl: "400px",
               },
+              height: { xs: "350px", sm: "422px" },
             }}
             style={boxstyle1}
           >

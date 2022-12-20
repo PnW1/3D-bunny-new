@@ -6,6 +6,8 @@ import Link from "@mui/material/Link";
 import joincommunity from "../Assets/joincommunity.png";
 import vector5 from "../Assets/vector5.png";
 import discord from "../Assets/discord-white.svg";
+import twitter from "../Assets/twitter-logo.svg";
+import instagram from "../Assets/instagram-fill.svg";
 
 const JoinTheComunity = () => {
   const bodyfont = {
@@ -50,7 +52,13 @@ const JoinTheComunity = () => {
     fontStyle: "normal",
     fontWeight: 100,
     lineHeight: "35px",
-    padding: { sm: "5px 30px 5px 30px", xs: "2px 10px 2px 10px" },
+    padding: {
+      xl: "12px 32px 12px 32px",
+      xs: "2px 10px 2px 10px",
+      sm: "5px 30px 5px 30px",
+      md: "5px 30px 5px 30px",
+      lg: "8px 30px 8px 30px",
+    },
     flex: "none",
     order: 0,
     flexGrow: 0,
@@ -74,7 +82,13 @@ const JoinTheComunity = () => {
     fontStyle: "normal",
     fontWeight: 100,
     lineHeight: "35px",
-    padding: { sm: "5px 30px 5px 30px", xs: "2px 10px 2px 10px" },
+    padding: {
+      xl: "12px 32px 12px 32px",
+      xs: "2px 10px 2px 10px",
+      sm: "5px 30px 5px 30px",
+      md: "5px 30px 5px 30px",
+      lg: "8px 30px 8px 30px",
+    },
     flex: "none",
     order: 0,
     flexGrow: 0,
@@ -98,7 +112,13 @@ const JoinTheComunity = () => {
     fontStyle: "normal",
     fontWeight: 100,
     lineHeight: "35px",
-    padding: { sm: "5px 30px 5px 30px", xs: "2px 10px 2px 10px" },
+    padding: {
+      xl: "12px 32px 12px 32px",
+      xs: "2px 10px 2px 10px",
+      sm: "5px 30px 5px 30px",
+      md: "5px 30px 5px 30px",
+      lg: "8px 30px 8px 30px",
+    },
     flex: "none",
     order: 0,
     flexGrow: 0,
@@ -144,7 +164,13 @@ const JoinTheComunity = () => {
         <Typography variant="h1" sx={headingfont}>
           Join the Community
         </Typography>
-        <Box display="flex" width="90%" gap={2} justifyContent="center">
+        <Box
+          display="flex"
+          width="90%"
+          gap={2}
+          sx={{ mt: { xs: 2, md: 3, xl: 5 } }}
+          justifyContent="center"
+        >
           <Button
             color="primary"
             startIcon={<img className="discordimage" src={discord}></img>}
@@ -152,7 +178,7 @@ const JoinTheComunity = () => {
             variant="contained"
           >
             <Link
-              href="https://discord.com/invite/ZMwKVNQEPe"
+              href="https://discord.gg/3dbunnypunks"
               rel="noopener noreferrer"
               target="_blank"
               sx={{
@@ -181,16 +207,8 @@ const JoinTheComunity = () => {
             </Link>
           </Button>
           <Button
-            startIcon={
-              <Twitter
-                sx={{
-                  width: { xs: "20px", sm: "30px" },
-                  height: { xs: "20px", sm: "30px" },
-                  color: "white",
-                }}
-                fontSize="large"
-              />
-            }
+            startIcon={<img className="discordimage" src={twitter}></img>}
+            fontSize="large"
             sx={btnstyle}
             variant="contained"
           >
@@ -226,15 +244,7 @@ const JoinTheComunity = () => {
           </Button>
           <Button
             color="secondary"
-            startIcon={
-              <Instagram
-                sx={{
-                  width: { xs: "15px", sm: "30px" },
-                  height: { xs: "15px", sm: "30px" },
-                  color: "white",
-                }}
-              />
-            }
+            startIcon={<img className="discordimage" src={instagram}></img>}
             sx={btnstyle1}
             variant="contained"
           >
@@ -274,13 +284,13 @@ const JoinTheComunity = () => {
         width="100%"
         position="absolute"
         bottom="0"
-        height="100px"
+        height="200px"
         zIndex={1}
         sx={{
           backgroundImage: `url(${vector5})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          mb: { xs: -5, xl: -2 },
+          mb: { xs: -5, xl: -3 },
         }}
       ></Box>
     </Grid>
