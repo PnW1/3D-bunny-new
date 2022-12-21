@@ -55,7 +55,7 @@ const Join = () => {
     label: { color: "white" },
     [`& fieldset`]: {
       fontVariant: "outlined",
-      size: "small",
+
       borderRadius: "50px",
       borderColor: "white",
     },
@@ -139,13 +139,13 @@ const Join = () => {
           <Typography width="80%" textAlign="center" color="white">
             Feel free to submit your Query .
           </Typography>
-          <Box className="joinfirstbox" gap={3}>
+          <Box className="joinfirstbox" sx={{ xs: 1, sm: 2, md: 3 }}>
             <Box
               width="100%"
               display="flex"
               justifyContent="space-between"
               sx={{
-                gap: { xs: 2, sm: "0px" },
+                gap: { xs: 1, sm: "0px" },
                 mt: { xs: 2, sm: "0px" },
                 flexWrap: { xs: "wrap", sm: "nowrap" },
               }}
@@ -188,7 +188,7 @@ const Join = () => {
 
             <TextField
               multiline
-              minRows={4}
+              minRows={2}
               fullWidth
               placeholder="Please enter text"
               sx={textareastyle}

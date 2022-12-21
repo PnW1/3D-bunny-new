@@ -167,7 +167,7 @@ const TheArt = () => {
       </Box>
       <Box className="artimage">
         <img
-          style={{ widows: "100%", height: "100%" }}
+          style={{ widows: "95%", height: "95%" }}
           src={nftartimage}
           alt=""
         />

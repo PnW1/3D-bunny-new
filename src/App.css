@@ -113,11 +113,22 @@
   z-index: 1;
 }
 
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 500px) {
   .artimage {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
+    bottom: 0%;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 299px) {
+  .artimage {
+    position: absolute;
+    width: 200px;
+    height: 200px;
     bottom: 0%;
     left: 0;
     z-index: 1;
@@ -311,9 +322,27 @@
   }
 }
 
-.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+.MuiPaper-root.MuiPopover-paper {
   width: 50% !important;
   top: 7% !important;
   right: 5% !important;
   background-color: #25194c !important;
+}
+
+.logostyle {
+  width: 60px;
+  height: 50px;
+}
+
+@media (min-width: 0px) and (max-width: 899px) {
+  .logostyle {
+    width: 50px;
+    height: 40px;
+  }
+}
+@media (min-width: 900px) {
+  .logostyle {
+    width: 80px;
+    height: 70px;
+  }
 }

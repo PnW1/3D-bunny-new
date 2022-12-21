@@ -140,6 +140,7 @@ const JoinTheComunity = () => {
 
   return (
     <Grid
+      id="joinus"
       container
       item
       height="763px"

@@ -98,14 +98,7 @@ function Header() {
           alignItems="center"
           justifyContent="center"
         >
-          <Avatar
-            sx={{
-              width: { xs: "40px", md: "79px" },
-              height: { xs: "40px", md: "60px" },
-            }}
-            src={logo}
-            alt="logo"
-          />
+          <img className="logostyle" src={logo} alt="logo" />
         </Box>
 
         <Box width="80%">

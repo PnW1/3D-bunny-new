@@ -4,6 +4,9 @@ import Header from "./Header";
 import homecircle from "../Assets/homecircle.png";
 import ScrolltoDown from "../Assets/ScrolltoDown.png";
 import elem from "../Assets/Animated Element.png";
+import scrollbox from "../Assets/scrollbox.gif";
+import scrolldown from "../Assets/scrolldown.gif";
+import { HashLink } from "react-router-hash-link";
 
 import grass from "../Assets/HeaderGrass.png";
 
@@ -113,25 +116,34 @@ const Home = () => {
           Welcome to the Bunny Hole
         </Button>
       </Box>
-      <Box sx={{ mb: { xs: "0px", xl: "-15px" } }} position="relative">
-        <img
-          style={{ width: "24px", height: "62px" }}
-          src={ScrolltoDown}
-          alt=""
-        />
+      <HashLink
+        to="/#joinus"
+        style={{ textDecoration: "none", color: "white" }}
+      >
+        <Box
+          sx={{ mb: { xs: "0px", xl: "-15px" }, width: "45px", height: "55px" }}
+          position="relative"
+        >
+          <img
+            style={{ width: "100%", height: "100%" }}
+            src={scrollbox}
+            alt=""
+          />
 
-        <img
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-          src={elem}
-          alt=""
-        ></img>
-      </Box>
-
+          <img
+            style={{
+              position: "absolute",
+              top: "100%",
+              left: "49%",
+              transform: "translate(-50%, -50%)",
+              width: "100%",
+              height: "100%",
+            }}
+            src={scrolldown}
+            alt=""
+          ></img>
+        </Box>
+      </HashLink>
       <Box
         width="100%"
         position="absolute"
