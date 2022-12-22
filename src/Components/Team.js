@@ -1,6 +1,8 @@
 import { Avatar, Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import profileimage from "../Assets/1.png";
+import img1s from "../Assets/innerimage.png";
+import img1l from "../Assets/outerimage.png";
 
 const headingfont = {
   fontFamily: "Nandia",
@@ -132,7 +134,8 @@ const Team = () => {
         sx={{ width: { xs: "100%", xl: "80%" }, gap: { xs: 2, xl: 6 } }}
       >
         <Box className="teamboxstyle">
-          <img src={profileimage} className="teamimage1" alt="" />
+          <img src={img1s} className="teamimage1" alt="" />
+          <img src={img1l} id="teamimage2" alt="" />
           <Typography pt={5} sx={teamheadingfont}>
             Sara
           </Typography>
@@ -141,7 +144,8 @@ const Team = () => {
           </Typography>
         </Box>
         <Box className="teamboxstyle">
-          <img src={profileimage} className="teamimage1" alt="" />
+          <img src={img1s} className="teamimage1" alt="" />
+          <img src={img1l} id="teamimage2" alt="" />
           <Typography pt={5} sx={teamheadingfont}>
             Wahab
           </Typography>
@@ -150,7 +154,8 @@ const Team = () => {
           </Typography>
         </Box>
         <Box className="teamboxstyle">
-          <img src={profileimage} className="teamimage1" alt="" />
+          <img src={img1s} className="teamimage1" alt="" />
+          <img src={img1l} id="teamimage2" alt="" />
           <Typography pt={5} sx={teamheadingfont}>
             Sparrow
           </Typography>
@@ -159,7 +164,8 @@ const Team = () => {
           </Typography>
         </Box>
         <Box className="teamboxstyle">
-          <img src={profileimage} className="teamimage1" alt="" />
+          <img src={img1s} className="teamimage1" alt="" />
+          <img src={img1l} id="teamimage2" alt="" />
           <Typography pt={5} sx={teamheadingfont}>
             Ray
           </Typography>
@@ -168,7 +174,8 @@ const Team = () => {
           </Typography>
         </Box>
         <Box className="teamboxstyle">
-          <img src={profileimage} className="teamimage1" alt="" />
+          <img src={img1s} className="teamimage1" alt="" />
+          <img src={img1l} id="teamimage2" alt="" />
           <Typography pt={5} sx={teamheadingfont}>
             ChicMic
           </Typography>
@@ -177,7 +184,8 @@ const Team = () => {
           </Typography>
         </Box>
         <Box className="teamboxstyle">
-          <img src={profileimage} className="teamimage1" alt="" />
+          <img src={img1s} className="teamimage1" alt="" />
+          <img src={img1l} id="teamimage2" alt="" />
           <Typography pt={5} sx={teamheadingfont}>
             Gabriel
           </Typography>
