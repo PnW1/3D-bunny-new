@@ -108,7 +108,7 @@ const Footer = () => {
           <img className="iconsize" src={twitterlogo}></img>
         </Link>
         <Link
-          href="https://www.instagram.com/3dbunnypunks_nft/"
+          href="https://www.instagram.com/3dbunnypunksnft/"
           rel="noopener noreferrer"
           target="_blank"
           sx={{

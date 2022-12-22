@@ -154,9 +154,9 @@ const Join = () => {
             Want to Ask Something?
           </Typography>
           <Typography width="80%" textAlign="center" color="white">
-            Feel free to submit your Query .
+            Feel free to submit your Query.
           </Typography>
-          <Box className="joinfirstbox" sx={{ xs: 1, sm: 2, md: 3 }}>
+          <Box className="joinfirstbox2" sx={{ xs: 1, sm: 2, md: 3 }}>
             <Box
               width="100%"
               display="flex"

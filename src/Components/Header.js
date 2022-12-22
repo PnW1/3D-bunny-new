@@ -91,13 +91,7 @@ function Header() {
           height: { xs: "50px", md: "80px" },
         }}
       >
-        <Box
-          width="20%"
-          height="80px"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
+        <Box width="20%" height="80px" display="flex">
           <HashLink
             to="/#home"
             style={{
@@ -105,6 +99,9 @@ function Header() {
               color: "white",
               width: "100%",
               height: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
             <img className="logostyle" src={logo} alt="logo" />

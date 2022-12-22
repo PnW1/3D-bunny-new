@@ -173,7 +173,7 @@ export default function Faq() {
           >
             <Typography>
               1. Connect your Phantom wallet to our site by clicking on the
-              ‘CONNECT PHANTOM’ button.{" "}
+              ‘CONNECT WALLET’ button.{" "}
               <span>
                 <br />
               </span>
