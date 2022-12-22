@@ -129,11 +129,11 @@ const RoadMap = () => {
         backgroundImage: `url(${roadmapbg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        zIndex: 2,
+        height: "100%",
       }}
       pb={2}
     >
-      <Typography textAlign="center" variant="h1" pt={15} sx={headingfont}>
+      <Typography textAlign="center" mt={20} variant="h1" sx={headingfont}>
         RoadMAp
       </Typography>
 

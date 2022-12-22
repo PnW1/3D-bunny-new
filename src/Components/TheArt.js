@@ -47,6 +47,8 @@ const headingfont = {
   lineHeight: "90px",
   color: "#ffffff",
   textTransform: "uppercase",
+  zIndex: 1,
+  mt: { xs: -10, sm: -5 },
 };
 const stylebodytext = {
   width: { xs: "90%", md: "70%", lg: "50%" },
@@ -129,16 +131,8 @@ const TheArt = () => {
       container
       item
       xs={12}
-      sx={{
-        mb: { xl: 30, xs: 0, md: 5, lg: 10 },
-        mt: { xl: -5, xs: -30, md: -20, lg: -5 },
-      }}
-      bgcolor="#030614"
       style={{
         position: "relative",
-        borderTop: "5px #030614",
-        borderTopStyle: "outset",
-        zIndex: 1,
       }}
     >
       <Box

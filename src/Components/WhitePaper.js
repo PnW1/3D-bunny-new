@@ -94,16 +94,14 @@ const WhitePaper = () => {
       xs={12}
       height="120vh"
       sx={{
-        backgroundColor: "#030526",
-
-        backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgimg})`,
+        backgroundImage: ` url(${bgimg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
       <Box
         sx={{ width: { xs: "100%", sm: "60%" } }}
-        alignItems="center"
+        alignItems="end"
         justifyContent="space-between"
         height="200px"
         gap={2}
@@ -111,9 +109,10 @@ const WhitePaper = () => {
         flexDirection="column"
       >
         <Typography
+          width="47%"
+          alignSelf="center"
           variant="h1"
           sx={headingfont}
-          style={{ textAlign: "right" }}
         >
           WHITEPAPER
         </Typography>
@@ -122,7 +121,12 @@ const WhitePaper = () => {
           we came up with something unique and different in our ecosystem for
           holders.{" "}
         </Typography>
-        <Box width="50%" display="flex" justifyContent="flex-end">
+        <Box
+          width="50%"
+          display="flex"
+          alignSelf="center"
+          justifyContent="flex-end"
+        >
           {" "}
           <a
             href={pdffile}

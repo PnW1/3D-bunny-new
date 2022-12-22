@@ -19,10 +19,8 @@ const LandingPage = () => {
       container
       disableGutters="true"
       sx={{
-        backgroundColor: "#030526",
-
-        backgroundImage:
-          "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
+        background:
+          "radial-gradient(44.37% 124.47% at 83.36% 89.78%, #050A20 0%, #040612 100%)",
       }}
     >
       <Header />

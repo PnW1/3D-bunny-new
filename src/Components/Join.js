@@ -66,6 +66,23 @@ const Join = () => {
     },
   };
 
+  const textfieldstyle1 = {
+    width: { xs: "100%", sm: "45%" },
+    input: { color: "white" },
+    label: { color: "white" },
+    [`& fieldset`]: {
+      fontVariant: "outlined",
+
+      borderRadius: "50px",
+      borderColor: "white",
+    },
+    "& .MuiOutlinedInput-root:hover": {
+      "& > fieldset": {
+        borderColor: "white",
+      },
+    },
+  };
+
   const textareastyle = {
     input: { color: "white" },
     label: { color: "white" },
@@ -159,7 +176,7 @@ const Join = () => {
                   ),
                 }}
                 placeholder="Please enter Name"
-                sx={textfieldstyle}
+                sx={textfieldstyle1}
               />
               <TextField
                 InputProps={{
@@ -170,7 +187,7 @@ const Join = () => {
                   ),
                 }}
                 placeholder="Please enter Email"
-                sx={textfieldstyle}
+                sx={textfieldstyle1}
               />
             </Box>
             <TextField

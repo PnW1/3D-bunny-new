@@ -98,7 +98,17 @@ function Header() {
           alignItems="center"
           justifyContent="center"
         >
-          <img className="logostyle" src={logo} alt="logo" />
+          <HashLink
+            to="/#home"
+            style={{
+              textDecoration: "none",
+              color: "white",
+              width: "100%",
+              height: "100%",
+            }}
+          >
+            <img className="logostyle" src={logo} alt="logo" />
+          </HashLink>
         </Box>
 
         <Box width="80%">

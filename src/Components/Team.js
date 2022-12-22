@@ -95,12 +95,6 @@ const Team = () => {
       gap={3}
       pt={2}
       pb={2}
-      sx={{
-        backgroundColor: "#030526",
-
-        backgroundImage:
-          "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
-      }}
       xs={12}
     >
       <Typography sx={headingfont} variant="h1" textAlign="center">

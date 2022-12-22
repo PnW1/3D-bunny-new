@@ -83,6 +83,7 @@ const Home = () => {
 
   return (
     <Grid
+      id="home"
       container
       item
       className="animated-background"
@@ -92,8 +93,9 @@ const Home = () => {
       xs={12}
       position="relative"
       sx={{
-        height: { xs: "100vh", sm: "110vh", md: "110vh" },
+        height: { xs: "100vh", sm: "110vh" },
       }}
+      pb={5}
     >
       <Box
         width="100%"
@@ -131,7 +133,7 @@ const Home = () => {
             style={{
               position: "absolute",
               top: "100%",
-              left: "48%",
+              left: "47%",
               transform: "translate(-50%, -50%)",
               width: "100%",
               height: "100%",
@@ -147,14 +149,14 @@ const Home = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        mb={-5}
-        bottom="0"
         height="200px"
         sx={{
           backgroundImage: `url(${grass})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          mb: { xs: "-40px", xl: "-0px" },
+          mb: { xs: "-40px", xl: "0px" },
+          bottom: "0%",
+          zIndex: 1,
         }}
       ></Box>
     </Grid>

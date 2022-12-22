@@ -83,6 +83,26 @@ const headingfont = {
   lineHeight: "90px",
   color: "#ffffff",
   textTransform: "uppercase",
+  variant: "h1",
+};
+const headingfont2 = {
+  fontFamily: "Nandia",
+  fontStyle: "normal",
+  fontWeight: 400,
+  flex: "none",
+  order: 0,
+  flexGrow: 0,
+  fontSize: {
+    xl: "50px",
+    xs: "20px",
+    sm: "30px",
+    md: "40px",
+    lg: "45px",
+  },
+  lineHeight: "90px",
+  color: "#ffffff",
+  textTransform: "uppercase",
+  variant: "h2",
 };
 
 const btnstyle = {
@@ -123,12 +143,6 @@ const Utilities = () => {
       mt={2}
       pt={2}
       xs={12}
-      sx={{
-        backgroundColor: "#030526",
-
-        backgroundImage:
-          "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
-      }}
     >
       <Typography sx={headingfont}>Utilities</Typography>
       <Typography sx={stylebodytext} pt={2} pb={2}>
@@ -137,16 +151,10 @@ const Utilities = () => {
         holders. Aside from benefiting from our utilities and secondary market,
         holding a Bunny NFT gives you an automatic lifetime entry into our
         raffle pool.{" "}
-        <span
-          style={{
-            fontWeight: "bold",
-            textAlign: "center",
-            fontFamily: "Poppins",
-            fontStyle: "normal",
-          }}
-        >
-          Bunny Raffle Pool: A Lifetime Benefit
-        </span>
+      </Typography>
+      <Typography sx={headingfont2} fontsi>
+        {" "}
+        Bunny Raffle Pool: A Lifetime Benefit
       </Typography>
       <Box
         width="80%"

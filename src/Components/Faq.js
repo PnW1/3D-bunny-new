@@ -50,12 +50,6 @@ export default function Faq() {
       pt={2}
       pb={5}
       xs={12}
-      sx={{
-        backgroundColor: "#030526",
-
-        backgroundImage:
-          "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
-      }}
     >
       <Typography sx={headingStyle} variant="h1" textAlign="center">
         FAQ’s
@@ -72,7 +66,10 @@ export default function Faq() {
       >
         <Accordion
           expanded={accordian1}
-          sx={{ border: "1px solid rgba(127,184,255,255)" }}
+          sx={{
+            border: "1px solid rgba(0, 184, 255, 0.22)",
+            filter: "drop-shadow(0px 2px 4px rgba(0, 184, 255, 0.03))",
+          }}
         >
           <AccordionSummary
             expandIcon={
@@ -101,12 +98,10 @@ export default function Faq() {
                 ? {
                     background: "#00b8ff",
                     color: "white",
-                    cursor: "unset !important",
                   }
                 : {
                     background: "#03050E",
                     color: "white",
-                    cursor: "unset !important",
                   }
             }
           >
@@ -129,7 +124,10 @@ export default function Faq() {
         </Accordion>
         <Accordion
           expanded={accordian2}
-          sx={{ border: "1px solid rgba(127,184,255,255)" }}
+          sx={{
+            border: "1px solid rgba(0, 184, 255, 0.22)",
+            filter: "drop-shadow(0px 2px 4px rgba(0, 184, 255, 0.03))",
+          }}
         >
           <AccordionSummary
             expandIcon={
@@ -158,12 +156,10 @@ export default function Faq() {
                 ? {
                     background: "#00b8ff",
                     color: "white",
-                    cursor: "unset !important",
                   }
                 : {
                     background: "#03050E",
                     color: "white",
-                    cursor: "unset !important",
                   }
             }
           >
@@ -194,7 +190,10 @@ export default function Faq() {
         </Accordion>
         <Accordion
           expanded={accordian3}
-          sx={{ border: "1px solid rgba(127,184,255,255)" }}
+          sx={{
+            border: "1px solid rgba(0, 184, 255, 0.22)",
+            filter: "drop-shadow(0px 2px 4px rgba(0, 184, 255, 0.03))",
+          }}
         >
           <AccordionSummary
             expandIcon={
@@ -223,12 +222,10 @@ export default function Faq() {
                 ? {
                     background: "#00b8ff",
                     color: "white",
-                    cursor: "unset !important",
                   }
                 : {
                     background: "#03050E",
                     color: "white",
-                    cursor: "unset !important",
                   }
             }
           >
@@ -251,7 +248,10 @@ export default function Faq() {
         </Accordion>
         <Accordion
           expanded={accordian4}
-          sx={{ border: "1px solid rgba(127,184,255,255)" }}
+          sx={{
+            border: "1px solid rgba(0, 184, 255, 0.22)",
+            filter: "drop-shadow(0px 2px 4px rgba(0, 184, 255, 0.03))",
+          }}
         >
           <AccordionSummary
             expandIcon={
@@ -280,12 +280,10 @@ export default function Faq() {
                 ? {
                     background: "#00b8ff",
                     color: "white",
-                    cursor: "unset !important",
                   }
                 : {
                     background: "#03050E",
                     color: "white",
-                    cursor: "unset !important",
                   }
             }
           >
@@ -308,7 +306,11 @@ export default function Faq() {
         </Accordion>
         <Accordion
           expanded={accordian5}
-          sx={{ border: "1px solid rgba(127,184,255,255)" }}
+          sx={{
+            border: "1px solid rgba(0, 184, 255, 0.22)",
+            filter: "drop-shadow(0px 2px 4px rgba(0, 184, 255, 0.03))",
+            borderRadius: "8px 8px 0px 0px",
+          }}
         >
           <AccordionSummary
             expandIcon={
@@ -337,12 +339,10 @@ export default function Faq() {
                 ? {
                     background: "#00b8ff",
                     color: "white",
-                    cursor: "unset !important",
                   }
                 : {
                     background: "#03050E",
                     color: "white",
-                    cursor: "unset !important",
                   }
             }
           >
@@ -363,7 +363,10 @@ export default function Faq() {
         </Accordion>
         <Accordion
           expanded={accordian6}
-          sx={{ border: "1px solid rgba(127,184,255,255)" }}
+          sx={{
+            border: "1px solid rgba(0, 184, 255, 0.22)",
+            filter: "drop-shadow(0px 2px 4px rgba(0, 184, 255, 0.03))",
+          }}
         >
           <AccordionSummary
             expandIcon={
@@ -392,12 +395,10 @@ export default function Faq() {
                 ? {
                     background: "#00b8ff",
                     color: "white",
-                    cursor: "unset !important",
                   }
                 : {
                     background: "#03050E",
                     color: "white",
-                    cursor: "unset !important",
                   }
             }
           >
@@ -421,7 +422,10 @@ export default function Faq() {
         </Accordion>
         <Accordion
           expanded={accordian7}
-          sx={{ border: "1px solid rgba(127,184,255,255)" }}
+          sx={{
+            border: "1px solid rgba(0, 184, 255, 0.22)",
+            filter: "drop-shadow(0px 2px 4px rgba(0, 184, 255, 0.03))",
+          }}
         >
           <AccordionSummary
             expandIcon={
@@ -450,12 +454,10 @@ export default function Faq() {
                 ? {
                     background: "#00b8ff",
                     color: "white",
-                    cursor: "unset !important",
                   }
                 : {
                     background: "#03050E",
                     color: "white",
-                    cursor: "unset !important",
                   }
             }
           >
