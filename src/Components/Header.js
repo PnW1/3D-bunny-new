@@ -364,9 +364,8 @@ function Header() {
               gap={1}
             >
               <Link
-                href="https://discord.gg/3dbunnypunks"
+                href="#"
                 rel="noopener noreferrer"
-                target="_blank"
                 sx={{
                   fontFamily: "Poppins",
                   textDecoration: "none",

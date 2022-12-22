@@ -74,7 +74,7 @@ const styleheadingtext = {
 
 const stylebodytext = {
   width: "85%",
-  textAlign: "justify",
+  textAlign: "center",
   fontFamily: "Poppins",
   fontStyle: "normal",
 

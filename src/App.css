@@ -19,8 +19,9 @@
 }
 
 .MuiTab-root.Mui-selected {
-  background: rgba(214, 0, 255, 0.1);
+  background: rgba(214, 0, 255, 0.1) !important;
   color: white !important;
+  border: 0.1em solid #9bd4eb !important;
 }
 .MuiTab-root {
   color: white !important;
@@ -260,15 +261,7 @@
   animation: bgfade 5s infinite;
   background-size: cover;
   background-position: center;
-  background: linear-gradient(
-    260deg,
-    #18494c,
-    #0779d4,
-    #481d39,
-    #4b1a38,
-    #7d08d3,
-    #25194c
-  );
+  background-image: url("Assets/Phase=First.png");
   position: relative;
 }
 @keyframes bgfade {

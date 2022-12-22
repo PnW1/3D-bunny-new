@@ -120,10 +120,7 @@ const Home = () => {
         to="/#joinus"
         style={{ textDecoration: "none", color: "white" }}
       >
-        <Box
-          sx={{ mb: { xs: "0px", xl: "-15px" }, width: "45px", height: "55px" }}
-          position="relative"
-        >
+        <Box sx={{ width: "45px", height: "55px" }} position="relative">
           <img
             style={{ width: "100%", height: "100%" }}
             src={scrollbox}
@@ -134,7 +131,7 @@ const Home = () => {
             style={{
               position: "absolute",
               top: "100%",
-              left: "49%",
+              left: "48%",
               transform: "translate(-50%, -50%)",
               width: "100%",
               height: "100%",

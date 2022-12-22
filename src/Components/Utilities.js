@@ -136,7 +136,17 @@ const Utilities = () => {
         came up with something unique and different in our ecosystem for
         holders. Aside from benefiting from our utilities and secondary market,
         holding a Bunny NFT gives you an automatic lifetime entry into our
-        raffle pool. Bunny Raffle Pool: A Lifetime Benefit
+        raffle pool.{" "}
+        <span
+          style={{
+            fontWeight: "bold",
+            textAlign: "center",
+            fontFamily: "Poppins",
+            fontStyle: "normal",
+          }}
+        >
+          Bunny Raffle Pool: A Lifetime Benefit
+        </span>
       </Typography>
       <Box
         width="80%"
