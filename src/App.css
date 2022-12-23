@@ -376,3 +376,204 @@
   border-width: 0.5px;
   border-style: solid;
 }
+
+/* ........................... normal ............................................   */
+
+.team_box_normal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 402px;
+  height: 368px;
+  background-image: url("Assets/Vectorbg.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .team_box_normal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 274px;
+    background-image: url("Assets/Vectorbgsm.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.image_setter_normal {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.team_image_normal_style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 143px;
+  height: 143px;
+  border-radius: 321.655px;
+}
+.team_inner_normal_style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 125px;
+  height: 125px;
+}
+.team_outer_normal_style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 161px;
+  height: 161px;
+}
+
+/* ........................... hover ............................................   */
+
+.team_box_hover {
+  width: 419.25px;
+  height: 465.87px;
+
+  /* Linear stroks */
+
+  background: linear-gradient(
+    180deg,
+    rgba(189, 0, 255, 0.48) 0%,
+    rgba(0, 184, 255, 0.38) 100%
+  );
+  backdrop-filter: blur(15.941px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25.5055px;
+
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .team_box_hover {
+    width: 279.25px;
+    height: 315.87px;
+
+    /* Linear stroks */
+
+    background: linear-gradient(
+      180deg,
+      rgba(189, 0, 255, 0.48) 0%,
+      rgba(0, 184, 255, 0.38) 100%
+    );
+    backdrop-filter: blur(15.941px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 25.5055px;
+
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.image_setter {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.team_image_hover_style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 233px;
+  height: 234px;
+  border-radius: 321.655px;
+}
+.team_inner_hover_style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 205px;
+  height: 204px;
+}
+.team_outer_hover_style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 262px;
+  height: 262px;
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .image_setter {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  .team_image_hover_style {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 143px;
+    height: 143px;
+    border-radius: 321.655px;
+  }
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  .team_inner_hover_style {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 125px;
+    height: 125px;
+  }
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  .team_outer_hover_style {
+    position: absolute;
+
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 161px;
+    height: 161px;
+  }
+}
+
+.team_box_style_outerbox .team_box_hover {
+  display: none;
+  margin-top: 50px;
+}
+.team_box_style_outerbox .team_box_normal {
+  display: block;
+  margin-top: 50px;
+}
+
+.team_box_style_outerbox:hover .team_box_hover {
+  display: block;
+  margin-top: 50px;
+}
+.team_box_style_outerbox:hover .team_box_normal {
+  display: none;
+  margin-top: 50px;
+}

@@ -3,6 +3,17 @@ import React from "react";
 import profileimage from "../Assets/1.png";
 import img1s from "../Assets/innerimage.png";
 import img1l from "../Assets/outerimage.png";
+import team_image1 from "../Assets/team_asset/team_image1.png";
+import team_image2 from "../Assets/team_asset/team_image2.png";
+import team_image3 from "../Assets/team_asset/team_image3.png";
+import team_image4 from "../Assets/team_asset/team_image4.png";
+import team_image5 from "../Assets/team_asset/team_image5.png";
+import team_image6 from "../Assets/team_asset/team_image6.png";
+
+import inner_hover from "../Assets/team_asset/inner_hover.png";
+import outer_hover from "../Assets/team_asset/outer_hover.png";
+import outer_normal from "../Assets/team_asset/outer_normal.png";
+import inner_normal from "../Assets/team_asset/outer_normal.png";
 
 const headingfont = {
   fontFamily: "Nandia",
@@ -127,7 +138,181 @@ const Team = () => {
         mb={5}
         sx={{ width: { xs: "100%", xl: "80%" }, gap: { xs: 2, xl: 6 } }}
       >
-        <Box className="teamboxstyle">
+        <Box className="team_box_style_outerbox">
+          <Box className="team_box_hover">
+            <Box className="image_setter">
+              <img src={team_image1} className="team_image_hover_style" />
+              <img src={inner_hover} className="team_inner_hover_style" />
+              <img src={outer_hover} className="team_outer_hover_style" />
+            </Box>
+            <Typography pt={5} sx={teamheadingfont}>
+              SARA
+            </Typography>
+            <Typography pt={1} sx={teambodyfont}>
+              FOUNDER
+            </Typography>
+          </Box>
+
+          <Box className="team_box_normal">
+            <Box className="image_setter_normal">
+              <img src={team_image1} className="team_image_normal_style" />
+              <img src={inner_normal} className="team_inner_normal_style" />
+              <img src={outer_normal} className="team_outer_normal_style" />
+            </Box>
+            <Typography pt={5} sx={teamheadingfont}>
+              SARA
+            </Typography>
+            <Typography pt={1} sx={teambodyfont}>
+              FOUNDER
+            </Typography>
+          </Box>
+        </Box>{" "}
+        <Box className="team_box_style_outerbox">
+          <Box className="team_box_hover">
+            <Box className="image_setter">
+              <img src={team_image2} className="team_image_hover_style" />
+              <img src={inner_hover} className="team_inner_hover_style" />
+              <img src={outer_hover} className="team_outer_hover_style" />
+            </Box>
+            <Typography pt={5} sx={teamheadingfont}>
+              WAHAB
+            </Typography>
+            <Typography pt={1} sx={teambodyfont}>
+              SENIOR DEVELOPER/PROGRAMMER
+            </Typography>
+          </Box>
+
+          <Box className="team_box_normal">
+            <Box className="image_setter_normal">
+              <img src={team_image2} className="team_image_normal_style" />
+              <img src={inner_normal} className="team_inner_normal_style" />
+              <img src={outer_normal} className="team_outer_normal_style" />
+            </Box>
+            <Typography pt={5} sx={teamheadingfont}>
+              WAHAB
+            </Typography>
+            <Typography pt={1} sx={teambodyfont}>
+              SENIOR DEVELOPER/PROGRAMMER
+            </Typography>
+          </Box>
+        </Box>
+        <Box className="team_box_style_outerbox">
+          <Box className="team_box_hover">
+            <Box className="image_setter">
+              <img src={team_image3} className="team_image_hover_style" />
+              <img src={inner_hover} className="team_inner_hover_style" />
+              <img src={outer_hover} className="team_outer_hover_style" />
+            </Box>
+            <Typography pt={5} sx={teamheadingfont}>
+              SPARROW
+            </Typography>
+            <Typography pt={1} sx={teambodyfont}>
+              PROJECT MANAGER/MARKETING
+            </Typography>
+          </Box>
+
+          <Box className="team_box_normal">
+            <Box className="image_setter_normal">
+              <img src={team_image3} className="team_image_normal_style" />
+              <img src={inner_normal} className="team_inner_normal_style" />
+              <img src={outer_normal} className="team_outer_normal_style" />
+            </Box>
+            <Typography pt={5} sx={teamheadingfont}>
+              SPARROW
+            </Typography>
+            <Typography pt={1} sx={teambodyfont}>
+              PROJECT MANAGER/MARKETING
+            </Typography>
+          </Box>
+        </Box>{" "}
+        <Box className="team_box_style_outerbox">
+          <Box className="team_box_hover">
+            <Box className="image_setter">
+              <img src={team_image4} className="team_image_hover_style" />
+              <img src={inner_hover} className="team_inner_hover_style" />
+              <img src={outer_hover} className="team_outer_hover_style" />
+            </Box>
+            <Typography pt={5} sx={teamheadingfont}>
+              RAY
+            </Typography>
+            <Typography pt={1} sx={teambodyfont}>
+              COMUNITY MANAGER/MARKETING
+            </Typography>
+          </Box>
+
+          <Box className="team_box_normal">
+            <Box className="image_setter_normal">
+              <img src={team_image4} className="team_image_normal_style" />
+              <img src={inner_normal} className="team_inner_normal_style" />
+              <img src={outer_normal} className="team_outer_normal_style" />
+            </Box>
+            <Typography pt={5} sx={teamheadingfont}>
+              RAY
+            </Typography>
+            <Typography pt={1} sx={teambodyfont}>
+              COMUNITY MANAGER/MARKETING
+            </Typography>
+          </Box>
+        </Box>{" "}
+        <Box className="team_box_style_outerbox">
+          <Box className="team_box_hover">
+            <Box className="image_setter">
+              <img src={team_image5} className="team_image_hover_style" />
+              <img src={inner_hover} className="team_inner_hover_style" />
+              <img src={outer_hover} className="team_outer_hover_style" />
+            </Box>
+            <Typography pt={5} sx={teamheadingfont}>
+              CHICMIC
+            </Typography>
+            <Typography pt={1} sx={teambodyfont}>
+              3D ART STUDIO
+            </Typography>
+          </Box>
+
+          <Box className="team_box_normal">
+            <Box className="image_setter_normal">
+              <img src={team_image5} className="team_image_normal_style" />
+              <img src={inner_normal} className="team_inner_normal_style" />
+              <img src={outer_normal} className="team_outer_normal_style" />
+            </Box>
+            <Typography pt={5} sx={teamheadingfont}>
+              CHICMIC
+            </Typography>
+            <Typography pt={1} sx={teambodyfont}>
+              3D ART STUDIO
+            </Typography>
+          </Box>
+        </Box>{" "}
+        <Box className="team_box_style_outerbox">
+          <Box className="team_box_hover">
+            <Box className="image_setter">
+              <img src={team_image6} className="team_image_hover_style" />
+              <img src={inner_hover} className="team_inner_hover_style" />
+              <img src={outer_hover} className="team_outer_hover_style" />
+            </Box>
+            <Typography pt={5} sx={teamheadingfont}>
+              GABRIEL
+            </Typography>
+            <Typography pt={1} sx={teambodyfont}>
+              COMIC ARTIST/ILLUSTRATOR
+            </Typography>
+          </Box>
+
+          <Box className="team_box_normal">
+            <Box className="image_setter_normal">
+              <img src={team_image6} className="team_image_normal_style" />
+              <img src={inner_normal} className="team_inner_normal_style" />
+              <img src={outer_normal} className="team_outer_normal_style" />
+            </Box>
+            <Typography pt={5} sx={teamheadingfont}>
+              GABRIEL
+            </Typography>
+            <Typography pt={1} sx={teambodyfont}>
+              COMIC ARTIST/ILLUSTRATOR
+            </Typography>
+          </Box>
+        </Box>{" "}
+        {/* <Box className="teamboxstyle">
           <img src={img1s} className="teamimage1" alt="" />
           <img src={img1l} id="teamimage2" alt="" />
           <Typography pt={5} sx={teamheadingfont}>
@@ -186,8 +371,7 @@ const Team = () => {
           <Typography pt={1} sx={teambodyfont}>
             Comic Artist/Illustrator
           </Typography>
-        </Box>
-
+        </Box> */}
         {/* <Box
           sx={{
             width: "399.35px",

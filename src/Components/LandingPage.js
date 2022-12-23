@@ -12,6 +12,7 @@ import Utilities from "./Utilities";
 import WhitePaper from "./WhitePaper";
 import Faq from "./Faq";
 import TheArt from "./TheArt";
+import Teamtest from "./Teamtest";
 
 const LandingPage = () => {
   return (
@@ -24,7 +25,9 @@ const LandingPage = () => {
       }}
     >
       <Header />
-      <Home />
+
+      <Team />
+      {/* <Home />
       <JoinTheComunity />
       <TheArt />
 
@@ -33,7 +36,7 @@ const LandingPage = () => {
       <WhitePaper />
       <Team />
       <Faq />
-      <Join />
+      <Join /> */}
       <Footer />
       {/*
      
